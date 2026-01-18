@@ -14043,30 +14043,39 @@ function IconBase(props) {
   };
   return IconContext !== void 0 ? /* @__PURE__ */ React$2.createElement(IconContext.Consumer, null, (conf) => elem(conf)) : elem(DefaultContext);
 }
+function FiArrowRight(props) {
+  return GenIcon({ "attr": { "viewBox": "0 0 24 24", "fill": "none", "stroke": "currentColor", "strokeWidth": "2", "strokeLinecap": "round", "strokeLinejoin": "round" }, "child": [{ "tag": "line", "attr": { "x1": "5", "y1": "12", "x2": "19", "y2": "12" }, "child": [] }, { "tag": "polyline", "attr": { "points": "12 5 19 12 12 19" }, "child": [] }] })(props);
+}
+function FiBox(props) {
+  return GenIcon({ "attr": { "viewBox": "0 0 24 24", "fill": "none", "stroke": "currentColor", "strokeWidth": "2", "strokeLinecap": "round", "strokeLinejoin": "round" }, "child": [{ "tag": "path", "attr": { "d": "M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" }, "child": [] }, { "tag": "polyline", "attr": { "points": "3.27 6.96 12 12.01 20.73 6.96" }, "child": [] }, { "tag": "line", "attr": { "x1": "12", "y1": "22.08", "x2": "12", "y2": "12" }, "child": [] }] })(props);
+}
 function FiCode(props) {
   return GenIcon({ "attr": { "viewBox": "0 0 24 24", "fill": "none", "stroke": "currentColor", "strokeWidth": "2", "strokeLinecap": "round", "strokeLinejoin": "round" }, "child": [{ "tag": "polyline", "attr": { "points": "16 18 22 12 16 6" }, "child": [] }, { "tag": "polyline", "attr": { "points": "8 6 2 12 8 18" }, "child": [] }] })(props);
 }
 function FiLayers(props) {
   return GenIcon({ "attr": { "viewBox": "0 0 24 24", "fill": "none", "stroke": "currentColor", "strokeWidth": "2", "strokeLinecap": "round", "strokeLinejoin": "round" }, "child": [{ "tag": "polygon", "attr": { "points": "12 2 2 7 12 12 22 7 12 2" }, "child": [] }, { "tag": "polyline", "attr": { "points": "2 17 12 22 22 17" }, "child": [] }, { "tag": "polyline", "attr": { "points": "2 12 12 17 22 12" }, "child": [] }] })(props);
 }
+function FiSearch(props) {
+  return GenIcon({ "attr": { "viewBox": "0 0 24 24", "fill": "none", "stroke": "currentColor", "strokeWidth": "2", "strokeLinecap": "round", "strokeLinejoin": "round" }, "child": [{ "tag": "circle", "attr": { "cx": "11", "cy": "11", "r": "8" }, "child": [] }, { "tag": "line", "attr": { "x1": "21", "y1": "21", "x2": "16.65", "y2": "16.65" }, "child": [] }] })(props);
+}
 function FiSmartphone(props) {
   return GenIcon({ "attr": { "viewBox": "0 0 24 24", "fill": "none", "stroke": "currentColor", "strokeWidth": "2", "strokeLinecap": "round", "strokeLinejoin": "round" }, "child": [{ "tag": "rect", "attr": { "x": "5", "y": "2", "width": "14", "height": "20", "rx": "2", "ry": "2" }, "child": [] }, { "tag": "line", "attr": { "x1": "12", "y1": "18", "x2": "12.01", "y2": "18" }, "child": [] }] })(props);
 }
-const ca1 = "/assets/Property%201_Default%20(5)-DpBQsuu2.png";
-const ca2 = "/assets/Property%201_Variant2-DRwAAavR.png";
-const group69 = "/assets/Group%2069-nB-c9r0h.png";
-const a1 = "/assets/Property%201_Default%20(1)-DBvZ-U0T.png";
-const a2 = "/assets/Property%201_Default%20(2)-D_qBy2d0.png";
-const a3 = "/assets/Property%201_Default%20(3)-mbAKSg1I.png";
-const a4 = "/assets/Property%201_Default%20(4)-BniKsSVb.png";
-const a0 = "/assets/Property%201_Default-BFWDwe45.png";
-const agilis = "/assets/Agilis-BlUsh6yB.png";
-const bhajan = "/assets/Bhajan%20mandhir-BgRlVzxE.png";
-const careerminer = "/assets/Careerminer-FedChDh6.png";
-const estateverse = "/assets/EstateVerse-dGzSLnlO.png";
-const growvia = "/assets/Growvia-C1l2j1G2.png";
-const hero = "/assets/unsplash_sScmok4Iq1o-CMP8weh_.png";
-const zinnai = "/assets/ZINN%20AI-VIogM3xT.png";
+function FiTarget(props) {
+  return GenIcon({ "attr": { "viewBox": "0 0 24 24", "fill": "none", "stroke": "currentColor", "strokeWidth": "2", "strokeLinecap": "round", "strokeLinejoin": "round" }, "child": [{ "tag": "circle", "attr": { "cx": "12", "cy": "12", "r": "10" }, "child": [] }, { "tag": "circle", "attr": { "cx": "12", "cy": "12", "r": "6" }, "child": [] }, { "tag": "circle", "attr": { "cx": "12", "cy": "12", "r": "2" }, "child": [] }] })(props);
+}
+function FiZap(props) {
+  return GenIcon({ "attr": { "viewBox": "0 0 24 24", "fill": "none", "stroke": "currentColor", "strokeWidth": "2", "strokeLinecap": "round", "strokeLinejoin": "round" }, "child": [{ "tag": "polygon", "attr": { "points": "13 2 3 14 12 14 11 22 21 10 12 10 13 2" }, "child": [] }] })(props);
+}
+const purposeImg = "/assets/purpose-D_fHzTOy.jpg";
+const unsplash1 = "/assets/unsplash1-DjYtDA9q.png";
+const unsplash2 = "/assets/unsplash2-D4gCOUez.png";
+const unsplash3 = "/assets/unsplash3-ZcAyIHIA.png";
+const unsplash4 = "/assets/unsplash4-Ct_WHEXD.png";
+const work1 = "/assets/work1--dSiQIzj.png";
+const work2 = "/assets/work2-CJJ6IMIu.png";
+const work3 = "/assets/work3-vqFZZYPK.png";
+const work4 = "/assets/work4-DdZXGOjE.png";
 function FaInstagram(props) {
   return GenIcon({ "attr": { "viewBox": "0 0 448 512" }, "child": [{ "tag": "path", "attr": { "d": "M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" }, "child": [] }] })(props);
 }
@@ -14075,7 +14084,7 @@ function FaLinkedinIn(props) {
 }
 const logo = "/assets/Logo-removebg-preview-oJnP2bCg.png";
 function Footer() {
-  return /* @__PURE__ */ jsxRuntimeExports.jsx("footer", { className: "w-full bg-white font-sans overflow-x-hidden", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "max-w-[1400px] mx-auto", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "bg-[#DCE4F7] relative", children: [
+  return /* @__PURE__ */ jsxRuntimeExports.jsx("footer", { className: "w-full bg-white font-sans overflow-x-hidden", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "max-w-[1500px] ", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "relative w-full bg-[#DCE4F7]", children: [
     /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-col md:flex-row justify-between items-start", children: [
       /* @__PURE__ */ jsxRuntimeExports.jsx(
         "div",
@@ -14159,8 +14168,8 @@ function Navbar() {
         /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-[#414141] font-bold text-[26px] leading-[1] tracking-tight", children: "DatenStrom-3AG Solutions" })
       ] }),
       /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "hidden md:flex items-center", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "rounded-full px-6 py-2 bg-[#0B0F5C] text-white shadow flex items-center gap-6 text-sm font-medium", children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx("a", { href: "#about", className: "hover:opacity-80", children: "About" }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("a", { href: "#mvp", className: "hover:opacity-80", children: "MVP Development" }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx(Link, { to: "/About", className: "hover:opacity-80", children: "About" }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("a", { href: "/MVP", className: "hover:opacity-80", children: "MVP Development" }),
         /* @__PURE__ */ jsxRuntimeExports.jsx(Link, { to: "/application", className: "hover:opacity-80", children: "Application Development" }),
         /* @__PURE__ */ jsxRuntimeExports.jsx(Link, { to: "/contact", className: "hover:opacity-80", children: "Contact Us" })
       ] }) }),
@@ -14183,8 +14192,8 @@ function Navbar() {
     ] }) }),
     /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: `mobile-menu ${open ? "open" : ""}`, children: [
       /* @__PURE__ */ jsxRuntimeExports.jsx("button", { className: "close-btn", onClick: () => setOpen(false), children: "✕" }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx("a", { className: "menu-item", href: "#about", onClick: () => setOpen(false), children: "About" }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx("a", { className: "menu-item", href: "#mvp", onClick: () => setOpen(false), children: "MVP Development" }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(Link, { className: "menu-item", to: "/About", onClick: () => setOpen(false), children: "About" }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx("a", { className: "menu-item", href: "/MVP", onClick: () => setOpen(false), children: "MVP Development" }),
       /* @__PURE__ */ jsxRuntimeExports.jsx(Link, { className: "menu-item", to: "/application", onClick: () => setOpen(false), children: "Application Development" }),
       /* @__PURE__ */ jsxRuntimeExports.jsx(Link, { className: "menu-item", to: "/contact", onClick: () => setOpen(false), children: "Contact Us" })
     ] }),
@@ -14242,6 +14251,462 @@ function Navbar() {
         ` })
   ] });
 }
+const differentData = [
+  {
+    title: "Speed Without Compromise",
+    desc: "Launch faster and smarter with lean, agile processes.",
+    image: unsplash1,
+    icon: FiZap
+  },
+  {
+    title: "Tailored Solutions",
+    desc: "Every product is customized to meet your business goals.",
+    image: unsplash2,
+    icon: FiTarget
+  },
+  {
+    title: "Market Insight",
+    desc: "Deep understanding of user needs and industry trends.",
+    image: unsplash3,
+    icon: FiSearch
+  },
+  {
+    title: "Cost Efficiency",
+    desc: "Achieve high-quality results without overspending.",
+    image: unsplash4,
+    icon: FiBox
+  }
+];
+function About() {
+  const [activeDiff, setActiveDiff] = reactExports.useState(0);
+  const [activeStep, setActiveStep] = reactExports.useState(0);
+  const workImages = [work1, work2, work3, work4];
+  const workSteps = [
+    {
+      title: "Understand Your Vision",
+      icon: FiSearch,
+      desc: "We start by deeply understanding your business goals, target users, challenges, and technical requirements to ensure the right foundation."
+    },
+    {
+      title: "Plan Smart",
+      icon: FiTarget,
+      desc: "We define the project scope, timeline, architecture, and roadmap to ensure efficient execution with minimal risk."
+    },
+    {
+      title: "Build and Iterate",
+      icon: FiZap,
+      desc: "Our developers build fast, test continuously, and refine features based on feedback to deliver a high-quality product."
+    },
+    {
+      title: "Launch and Grow",
+      icon: FiBox,
+      desc: "We deploy your product, monitor performance, provide support, and help scale your solution as your business grows."
+    }
+  ];
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "min-h-screen flex flex-col text-[#0B0F5C] bg-white", children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsx(Navbar, {}),
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("main", { className: "flex-1 w-full overflow-hidden", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx("section", { className: "w-full bg-[#EEF1FB] pt-20 pb-20", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "max-w-[1728px] mx-auto px-10 pt-20", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "relative w-full h-auto lg:h-[400px] rounded-[32px] overflow-hidden shadow-2xl", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx(
+            "img",
+            {
+              src: purposeImg,
+              alt: "Our Purpose",
+              className: "absolute inset-0 w-full h-full object-cover"
+            }
+          ),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "relative h-full w-full flex flex-col justify-between", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "relative p-8 lg:p-0 lg:absolute lg:bottom-16 lg:left-16 z-20", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("h2", { className: "text-white text-[42px] lg:text-[72px] font-bold leading-[1] tracking-tight", children: [
+              "Our ",
+              /* @__PURE__ */ jsxRuntimeExports.jsx("br", {}),
+              " Purpose"
+            ] }) }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "relative w-full lg:absolute lg:bottom-0 lg:right-0 lg:w-[520px] flex items-end z-20", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "bg-[#EEF1FB] pt-10 pl-10 pr-6 pb-6 rounded-none lg:rounded-tl-[40px] w-full relative z-10", children: /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-gray-00 text-sm sm:text-lg max-w-3xl mx-auto", children: "We speed the journey from idea to execution, delivering fast MVPs and custom apps without the usual tech headaches." }) }) })
+          ] }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("button", { className: "absolute right-12 top-1/3 translate-y-1/3 w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-xl text-[#050363] hover:scale-110 transition-transform z-30", children: /* @__PURE__ */ jsxRuntimeExports.jsx(FiArrowRight, { size: 28 }) })
+        ] }),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "mt-20 ml-2", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("h1", { className: "font-bold text-[26px] sm:text-[36px] md:text-[50px] leading-tight tracking-[2%] text-[#050363]", children: [
+            "Turning Ideas into Digital Reality for ",
+            /* @__PURE__ */ jsxRuntimeExports.jsx("br", {}),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-[#373d71]", children: "Startups and SMEs" })
+          ] }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { className: "mt-4  text-gray-00 text-sm sm:text-lg max-w-3xl ", children: [
+            "Turn your ideas into market-ready solution. We help startups launch quickly",
+            /* @__PURE__ */ jsxRuntimeExports.jsx("br", {}),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-[#373d71]", children: "and SMEs digitize efficiently with tailored digital solutions." })
+          ] })
+        ] })
+      ] }) }),
+      /* @__PURE__ */ jsxRuntimeExports.jsxs(
+        "section",
+        {
+          className: "relative h-auto min-h-[750px] flex flex-col items-center overflow-hidden py-10 lg:pb-0",
+          style: {
+            background: "linear-gradient(180deg, #E6E9F5 0%, #F1F3FA 100%, #FFFFFF 100%)"
+          },
+          children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("h3", { className: "font-bold text-[26px] sm:text-[36px] md:text-[50px] leading-tight tracking-[2%] text-[#050363]", children: [
+              "What Makes Us ",
+              /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-[#3a427d]", children: "Different" })
+            ] }),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "mt-10 text-center relative", children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx(
+                "span",
+                {
+                  className: "absolute left-[-20%] top-1/2 -translate-y-1/2 text-[128px] font-bold text-[#2f3cc8] opacity-20 select-none transition-all duration-300",
+                  children: String(activeDiff + 1).padStart(2)
+                },
+                activeDiff
+              ),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("h4", { className: "text-3xl md:text-4xl font-bold text-[#050363]", children: differentData[activeDiff].title }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "mt-4text-gray-00 text-sm sm:text-lg max-w-3xl", children: differentData[activeDiff].desc })
+            ] }),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "relative mt-24 w-full max-w-5xl h-auto lg:h-[450px] flex flex-col lg:block items-center", children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "hidden lg:block absolute left-1/2 -translate-x-1/2 top-0 w-[760px] h-[760px] rounded-full border border-[#cfd5ff]" }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "relative lg:absolute lg:left-1/2 lg:-translate-x-1/2 lg:top-[140px] w-full max-w-[340px] lg:max-w-none lg:w-[620px] h-[250px] lg:h-[360px] rounded-2xl lg:rounded-[20px] lg:rounded-t-[320px] overflow-hidden shadow-xl bg-white mb-8 lg:mb-0", children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+                "img",
+                {
+                  src: differentData[activeDiff].image,
+                  alt: "Different feature",
+                  className: "w-full h-full object-cover transition-all duration-500"
+                }
+              ) }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "relative w-full flex flex-wrap justify-center gap-6 lg:block lg:w-auto", children: differentData.map((item, index2) => {
+                const Icon = item.icon;
+                const positions = [
+                  "lg:left-[calc(50%-390px)] lg:top-[220px]",
+                  "lg:left-[calc(40%-160px)] lg:top-[60px]",
+                  "lg:right-[calc(40%-160px)] lg:top-[60px]",
+                  "lg:right-[calc(50%-390px)] lg:top-[220px]"
+                ];
+                return /* @__PURE__ */ jsxRuntimeExports.jsx(
+                  "button",
+                  {
+                    onClick: () => setActiveDiff(index2),
+                    className: `relative lg:absolute mx-0 lg:mx-0 ${positions[index2]} w-16 h-16 rounded-full flex items-center justify-center transition-all duration-300 shadow-lg ${activeDiff === index2 ? "bg-[#0B0F5C] text-white scale-110 ring-4 ring-[#dfe3ff]" : "bg-white text-[#0B0F5C] hover:scale-105"}`,
+                    children: /* @__PURE__ */ jsxRuntimeExports.jsx(Icon, { size: 22 })
+                  },
+                  index2
+                );
+              }) })
+            ] })
+          ]
+        }
+      ),
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("section", { className: "py-16 sm:py-20 px-4 bg-white", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "text-center font-bold text-[26px] sm:text-[36px] md:text-[50px] leading-tight tracking-wide text-[#050363] mb-10", children: "How We Work" }),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "relative pl-10", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "absolute left-[11px] top-4 bottom-4 w-[2px] bg-gray-200" }),
+            [
+              "Understand Your Vision",
+              "Plan Smart",
+              "Build and Iterate",
+              "Launch and Grow"
+            ].map((title, idx) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
+              "div",
+              {
+                className: "relative mb-10 cursor-pointer",
+                onClick: () => setActiveStep(idx),
+                children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    "div",
+                    {
+                      className: `absolute -left-[34px] top-1 w-6 h-6 rounded-full border-4 border-white shadow-md transition-all ${activeStep === idx ? "bg-[#0B0F5C] scale-125" : "bg-gray-300"}`
+                    }
+                  ),
+                  /* @__PURE__ */ jsxRuntimeExports.jsxs(
+                    "h3",
+                    {
+                      className: `text-xl sm:text-2xl font-bold ${activeStep === idx ? "text-[#050363]" : "text-gray-400"}`,
+                      children: [
+                        /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { className: "block text-sm text-gray-400 font-normal mb-1", children: [
+                          "Stage ",
+                          idx + 1
+                        ] }),
+                        title
+                      ]
+                    }
+                  )
+                ]
+              },
+              idx
+            ))
+          ] }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "bg-[#F8F9FF] p-6 sm:p-8 rounded-3xl shadow-md", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx(
+              "img",
+              {
+                src: workImages[activeStep],
+                alt: "Workspace",
+                className: "w-full h-[240px] sm:h-[300px] rounded-xl mb-6 object-cover transition-all duration-300"
+              }
+            ),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex gap-4 items-start", children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-10 h-10 rounded-full border flex items-center justify-center text-[#0B0F5C]", children: (() => {
+                const Icon = workSteps[activeStep].icon;
+                return /* @__PURE__ */ jsxRuntimeExports.jsx(Icon, { size: 18 });
+              })() }),
+              /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx("h4", { className: "text-xl sm:text-2xl font-bold", children: workSteps[activeStep].title }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-gray-00 text-sm sm:text-lg max-w-3xl mx-auto", children: workSteps[activeStep].desc })
+              ] })
+            ] })
+          ] })
+        ] })
+      ] }),
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("section", { className: "text-center py-24", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "text-center font-bold text-[26px] sm:text-[36px] md:text-[50px] leading-tight tracking-wide text-[#050363] mb-10", children: "Ready to turn your idea into reality?" }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "mt-4 text-gray-00 text-sm sm:text-lg max-w-3xl mx-auto", children: "Let’s start building together" }),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("button", { className: "inline-flex items-center gap-3 px-6 py-2 border-2 border-[#0B0F5C] rounded-full font-semibold text-[#0B0F5C] hover:bg-[#0B0F5C] hover:text-white transition-all group", children: [
+          "Talk to Our Experts",
+          /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "w-8 h-8 flex items-center justify-center rounded-full bg-[#0B0F5C] text-white group-hover:bg-white group-hover:text-[#0B0F5C] transition-all", children: /* @__PURE__ */ jsxRuntimeExports.jsx(FiArrowRight, { size: 16 }) })
+        ] })
+      ] })
+    ] }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx(Footer, {})
+  ] });
+}
+const a1$1 = "/assets/frame1-CY4KzALG.png";
+const a2$1 = "/assets/frame2-DiNqSLoF.png";
+const a3$1 = "/assets/frame3-qreJsAtb.png";
+const a4$1 = "/assets/frame4-wfHbmGPi.png";
+const group69 = "/assets/Group%2069-nB-c9r0h.png";
+const ca1$1 = "/assets/mask-CHeDDy_y.png";
+const ca2$1 = "/assets/mask1-B6_ZpijL.png";
+const b1 = "/assets/mvp1-CRxVTGQv.png";
+const b2 = "/assets/mvp2-CEP1rESq.png";
+const b3 = "/assets/mvp3-3AjvVb8f.png";
+const ourImg1 = "/assets/Our%202-NuyLKAhf.png";
+const approachItems$1 = [
+  { title: "Startup-Focused", image: a1$1 },
+  { title: "Agile Methodology", image: a2$1 },
+  { title: "Market-Ready-Solution", image: a3$1 },
+  { title: "Collaborative Partnership", image: a4$1 }
+];
+function Application$1() {
+  const [maskIndex, setMaskIndex] = reactExports.useState(0);
+  const [approachIndex, setApproachIndex] = reactExports.useState(0);
+  const maskImages = [ca1$1, ca2$1];
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "bg-white min-h-screen overflow-x-hidden", children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsx(Navbar, {}),
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "max-w-7xl mx-auto px-4", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx("section", { className: "pt-28 pb-24 bg-white", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "max-w-7xl mx-auto px-4", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "grid grid-cols-1 md:grid-cols-2 gap-10 items-start", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("h1", { className: "font-bold text-[32px] sm:text-[42px] md:text-[50px] leading-tight text-[#050363]", children: [
+              "Launch Your Startup ",
+              /* @__PURE__ */ jsxRuntimeExports.jsx("br", {}),
+              "Faster with a ",
+              /* @__PURE__ */ jsxRuntimeExports.jsx("br", {}),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-[#585b81]", children: "Market-Ready MVP" })
+            ] }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "mt-6 md:mt-10 font-semibold text-[#0c0c0d] text-lg sm:text-xl mb-8 md:mb-0", children: "We help early-stage startups transform ideas into functional products quickly and efficiently. Test, iterate, and validate your concept with a clean, scalable MVP designed for growth." })
+          ] }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "relative flex justify-end z-20", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "rounded-[24px] overflow-hidden shadow-xl bg-white w-full max-w-[649px]", children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+            "img",
+            {
+              src: ourImg1,
+              alt: "Team working",
+              className: "w-full h-auto object-cover"
+            }
+          ) }) })
+        ] }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "relative mt-10 md:mt-[-120px] z-10", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-full h-auto py-8 md:py-0 md:h-[154px] bg-[#050363] rounded-[30px] flex flex-col md:flex-row items-center justify-between px-6 md:px-12 shadow-lg gap-6 md:gap-0", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("button", { className: "flex items-center gap-3 bg-white text-[#050363] px-6 py-2 rounded-full text-[14px] font-bold shadow-md whitespace-nowrap", children: [
+          "Start Your MVP Today",
+          /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "w-6 h-6 rounded-full border border-[#050363] flex items-center justify-center text-sm", children: "→" })
+        ] }) }) }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "mt-10 max-w-7xl mx-auto px-4", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "grid grid-cols-3 items-center opacity-70", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex justify-start", children: /* @__PURE__ */ jsxRuntimeExports.jsx("img", { src: b1, alt: "MVP 1", className: "h-12 sm:h-14 object-contain" }) }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex justify-center", children: /* @__PURE__ */ jsxRuntimeExports.jsx("img", { src: b2, alt: "MVP 2", className: "h-16 sm:h-20 object-contain" }) }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex justify-end", children: /* @__PURE__ */ jsxRuntimeExports.jsx("img", { src: b3, alt: "MVP 3", className: "h-12 sm:h-14 object-contain" }) })
+        ] }) })
+      ] }) }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx("section", { className: " mb-28", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-16 items-start", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("h2", { className: "font-bold text-[32px] sm:text-[42px] md:text-[48px] leading-tight text-[#050363]", children: [
+            "Why MVP Development ",
+            /* @__PURE__ */ jsxRuntimeExports.jsx("br", {}),
+            " Matters"
+          ] }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "mt-11 flex gap-6 items-start", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "font-bold text-[#050363] text-xl sm:text-2xl md:text-3xl leading-none", children: "1" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx("div", {}),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx("h4", { className: "font-semibold text-[#050363] text-xl sm:text-2xl md:text-3xl mb-10", children: "Bringing a new product to market is challenging. Startups often face:" }),
+              /* @__PURE__ */ jsxRuntimeExports.jsxs("ul", { className: "space-y-5 font-semibold text-[#0c0c0d] text-lg sm:text-xl mb-", children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx("li", { children: "Limited time and budget to test ideas" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("li", { children: "Uncertainty about product-market fit" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("li", { children: "Technical hurdles in building a reliable, user-ready product" })
+              ] })
+            ] })
+          ] })
+        ] }),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex justify-center md:justify-end relative", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx(
+            "img",
+            {
+              src: maskImages[maskIndex],
+              alt: "Idea bulb",
+              className: "w-[300px] sm:w-[300px] md:w-[250px] object-contain"
+            }
+          ),
+          /* @__PURE__ */ jsxRuntimeExports.jsx(
+            "button",
+            {
+              onClick: () => setMaskIndex((prev) => (prev + 1) % maskImages.length),
+              className: "absolute bottom-[-10px] right-0 md:bottom-[-2px] md:left-[80%] md:-translate-x-1/2\n             w-12 h-12 rounded-full bg-[#e9edff] text-[#050363]\n             flex items-center justify-center text-xl shadow-md\n             hover:bg-[#dfe5ff] transition",
+              children: "→"
+            }
+          )
+        ] })
+      ] }) }),
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("section", { className: "mt-24 sm:mt-28 text-center relative", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "absolute inset-0 bg-[linear-gradient(#eef0fb_1px,transparent_1px),linear-gradient(90deg,#eef0fb_1px,transparent_1px)] bg-[size:28px_28px] opacity-40 pointer-events-none" }),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "relative", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("h2", { className: "font-bold text-[24px] sm:text-[36px] md:text-[40px] leading-tight text-[#050363]", children: [
+            "Our Application ",
+            /* @__PURE__ */ jsxRuntimeExports.jsx("br", {}),
+            "Development ",
+            /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-[#676c8e]", children: "Services" })
+          ] }),
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "mt-10 sm:mt-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 justify-items-center", children: [
+            /* @__PURE__ */ jsxRuntimeExports.jsx(ServiceDarkCard$1, { icon: FiCode, title: "Custom Software Development" }),
+            /* @__PURE__ */ jsxRuntimeExports.jsx(ServiceLightCard$1, {}),
+            /* @__PURE__ */ jsxRuntimeExports.jsx(ServiceDarkCard$1, { icon: FiLayers, title: "Cross-Platform Solutions" })
+          ] })
+        ] })
+      ] }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(
+        ApproachSection$1,
+        {
+          approachItems: approachItems$1,
+          index: approachIndex,
+          setIndex: setApproachIndex
+        }
+      ),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(ContactSection$1, {})
+    ] }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx(Footer, {})
+  ] });
+}
+function ServiceDarkCard$1({ icon: Icon, title }) {
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "w-full sm:w-[300px] min-h-[280px] sm:h-[320px] rounded-2xl p-6 text-white relative bg-gradient-to-b from-[#9aa0c9] to-[#1a1f7a] text-left", children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "absolute top-5 right-5 w-10 h-10 bg-white/25 rounded-lg flex items-center justify-center", children: /* @__PURE__ */ jsxRuntimeExports.jsx(Icon, { size: 18 }) }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "mt-12 font-bold text-lg sm:text-xl leading-tight", children: title }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "mt-4 text-sm text-white/90", children: "Tailored solutions for automating tasks, improving workflows, or delivering unique business functionality." })
+  ] });
+}
+function ServiceLightCard$1() {
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "w-full sm:w-[300px] min-h-[280px] sm:h-[320px] rounded-2xl p-6 bg-[#dde3f5] relative text-left", children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "absolute top-5 right-5 w-10 h-10 bg-[#cfd7ef] rounded-lg flex items-center justify-center", children: /* @__PURE__ */ jsxRuntimeExports.jsx(FiSmartphone, { size: 18, className: "text-[#0b0f5c]" }) }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "mt-12 font-bold text-lg sm:text-xl leading-tight text-[#0b0f5c]", children: "Mobile App Development" }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "mt-4 text-sm text-gray-600", children: "High-performance apps for iOS and Android designed to engage users." })
+  ] });
+}
+function ApproachSection$1({ approachItems: approachItems2, index: index2, setIndex }) {
+  const prev = () => setIndex((index2 - 1 + approachItems2.length) % approachItems2.length);
+  const next = () => setIndex((index2 + 1) % approachItems2.length);
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("section", { className: "mt-28 sm:mt-32 mb-32 sm:mb-40 max-w-[1400px] mx-auto relative overflow-hidden", children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "font-bold text-[24px] sm:text-[36px] md:text-[40px] leading-tight text-[#0b0a72] text-center md:text-left", children: "Our Approach" }),
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-col md:flex-row items-center justify-between", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "w-full md:w-1/2 relative z-20", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex flex-col items-center md:items-end space-y-4 sm:space-y-6 md:space-y-10 pr-0 md:pr-24", children: approachItems2.map((item, i) => /* @__PURE__ */ jsxRuntimeExports.jsx(
+          "h3",
+          {
+            onClick: () => setIndex(i),
+            className: `cursor-pointer font-semibold transition-all duration-500 select-none text-center md:text-right
+                ${i === index2 ? "text-[20px] sm:text-[32px] md:text-[40px] text-[#0e0e19]" : "text-[14px] sm:text-[22px] md:text-[28px] text-[#0d0d19] opacity-30"}`,
+            children: item.title
+          },
+          i
+        )) }),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex gap-4 mt-10 sm:mt-16 md:mt-24 justify-center md:justify-start", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx("button", { onClick: prev, className: "w-10 sm:w-12 h-10 sm:h-12 rounded-full bg-[#EBF0FF] flex items-center justify-center text-[#050363] shadow", children: "←" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("button", { onClick: next, className: "w-10 sm:w-12 h-10 sm:h-12 rounded-full bg-[#EBF0FF] flex items-center justify-center text-[#050363] shadow", children: "→" })
+        ] })
+      ] }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-full md:w-1/2 flex justify-center md:justify-start mt-12 md:mt-0", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-full max-w-[360px] md:max-w-none md:w-[98%] h-[250px] sm:h-[320px] md:h-[70%]\n                  rounded-xl md:rounded-full\n                  overflow-hidden bg-white\n                  md:-translate-x-[15%] md:-translate-y-[10%]", children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+        "img",
+        {
+          src: approachItems2[index2].image,
+          alt: approachItems2[index2].title,
+          className: "w-full h-full object-contain md:object-cover"
+        }
+      ) }) })
+    ] })
+  ] });
+}
+function ContactSection$1() {
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("section", { id: "contact", className: "mt-20 sm:mt-32 mb-20 text-center px-4", children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("h2", { className: "font-bold text-[24px] sm:text-[36px] md:text-[40px] leading-tight text-[#0b0a72]", children: [
+      "Ready to Build Your ",
+      /* @__PURE__ */ jsxRuntimeExports.jsx("br", {}),
+      " Application?"
+    ] }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "mt-4 text-gray-00 text-sm sm:text-lg max-w-3xl mx-auto", children: "Let us create a digital solution that boosts efficiency, engages users, and accelerates growth for your startup or SME." }),
+    /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "relative mt-12 sm:mt-16 max-w-6xl mx-auto", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "block relative md:absolute right-0 top-[5%] bottom-[5%] w-full md:w-1/2 h-[220px] md:h-auto rounded-2xl overflow-hidden shadow-lg mb-6 md:mb-0", children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+        "img",
+        {
+          src: group69,
+          alt: "Contact Visual",
+          className: "w-full h-full object-cover"
+        }
+      ) }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "relative bg-white rounded-2xl border border-[#9aa0c9] shadow-lg p-6 sm:p-8 md:p-12 text-left md:w-[60%] mx-auto", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("form", { className: "space-y-5", children: [
+        ["Name*", "Email*", "Phone Number", "Startup Name (optional)"].map((label, idx) => /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx("label", { className: "block text-[#0b0f5c] font-bold mb-2 text-sm sm:text-base", children: label }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx(
+            "input",
+            {
+              type: label.includes("Email") ? "email" : "text",
+              required: label.includes("*"),
+              className: "w-full h-11 sm:h-12 rounded-xl border border-[#9aa0c9] px-4 outline-none bg-white"
+            }
+          )
+        ] }, idx)),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx("label", { className: "block text-[#0b0f5c] font-bold mb-2 text-sm sm:text-base", children: "Message" }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx(
+            "textarea",
+            {
+              rows: 4,
+              className: "w-full rounded-xl border border-[#9aa0c9] p-4 outline-none resize-none bg-white"
+            }
+          )
+        ] }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex justify-center md:justify-start pt-2", children: /* @__PURE__ */ jsxRuntimeExports.jsxs(
+          "button",
+          {
+            type: "submit",
+            className: "flex items-center gap-3 px-6 sm:px-8 py-3 rounded-full border border-[#0b0f5c] text-[#0b0f5c] font-bold hover:bg-[#0b0f5c] hover:text-white transition",
+            children: [
+              "Send Message",
+              /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "w-6 h-6 rounded-full bg-[#0b0f5c] flex items-center justify-center text-white text-sm", children: "→" })
+            ]
+          }
+        ) })
+      ] }) })
+    ] })
+  ] });
+}
+const ca1 = "/assets/Property%201_Default%20(5)-DpBQsuu2.png";
+const ca2 = "/assets/Property%201_Variant2-DRwAAavR.png";
+const a1 = "/assets/Property%201_Default%20(1)-DBvZ-U0T.png";
+const a2 = "/assets/Property%201_Default%20(2)-D_qBy2d0.png";
+const a3 = "/assets/Property%201_Default%20(3)-mbAKSg1I.png";
+const a4 = "/assets/Property%201_Default%20(4)-BniKsSVb.png";
+const a0 = "/assets/Property%201_Default-BFWDwe45.png";
+const agilis = "/assets/Agilis-BlUsh6yB.png";
+const bhajan = "/assets/Bhajan%20mandhir-BgRlVzxE.png";
+const careerminer = "/assets/Careerminer-FedChDh6.png";
+const estateverse = "/assets/EstateVerse-dGzSLnlO.png";
+const growvia = "/assets/Growvia-C1l2j1G2.png";
+const hero = "/assets/unsplash_sScmok4Iq1o-CMP8weh_.png";
+const zinnai = "/assets/ZINN%20AI-VIogM3xT.png";
 const projectImages = [
   careerminer,
   zinnai,
@@ -14268,8 +14733,9 @@ function Application() {
         /* @__PURE__ */ jsxRuntimeExports.jsxs("h1", { className: "font-bold text-[26px] sm:text-[36px] md:text-[50px] leading-tight tracking-[2%] text-[#050363]", children: [
           "Custom Applications",
           " ",
+          /* @__PURE__ */ jsxRuntimeExports.jsx("br", { className: "sm:hidden" }),
           /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-[#585b81]", children: "That Drive Growth" }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("br", {}),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("br", { className: "hidden sm:block" }),
           "and Efficiency"
         ] }),
         /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "mt-4 sm:mt-6 text-gray-800 text-sm sm:text-lg max-w-3xl mx-auto", children: "From MVPs for startups to scalable applications for SMEs, we create tailored solutions that turn ideas into digital products that work." })
@@ -14278,7 +14744,7 @@ function Application() {
         /* @__PURE__ */ jsxRuntimeExports.jsx("img", { src: hero, className: "absolute inset-0 w-full h-full object-cover", alt: "Hero" }),
         /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "absolute inset-0 flex items-center px-4 sm:px-10", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
           /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-[#0b0f5c] font-bold text-base sm:text-xl mb-4 sm:mb-10", children: "Our projects" }),
-          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-3 sm:gap-4 flex-wrap", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-2 sm:gap-4 flex-wrap", children: [
             /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex -space-x-3", children: projectImages.map((img, i) => /* @__PURE__ */ jsxRuntimeExports.jsx(
               Link,
               {
@@ -14377,7 +14843,7 @@ function ApproachSection({ approachItems: approachItems2, index: index2, setInde
   return /* @__PURE__ */ jsxRuntimeExports.jsxs("section", { className: "mt-28 sm:mt-32 mb-32 sm:mb-40 max-w-[1400px] mx-auto relative overflow-hidden", children: [
     /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "font-bold text-[24px] sm:text-[36px] md:text-[40px] leading-tight text-[#0b0a72] text-center md:text-left", children: "Our Approach" }),
     /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-col md:flex-row items-center justify-between", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "w-full md:w-1/2 relative z-20", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "w-full md:w-1/2 relative z-20 mb-10 md:mb-0", children: [
         /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex flex-col items-center md:items-end space-y-4 sm:space-y-6 md:space-y-10 pr-0 md:pr-24", children: approachItems2.map((item, i) => /* @__PURE__ */ jsxRuntimeExports.jsx(
           "h3",
           {
@@ -14393,7 +14859,7 @@ function ApproachSection({ approachItems: approachItems2, index: index2, setInde
           /* @__PURE__ */ jsxRuntimeExports.jsx("button", { onClick: next, className: "w-10 sm:w-12 h-10 sm:h-12 rounded-full bg-[#EBF0FF] flex items-center justify-center text-[#050363] shadow", children: "→" })
         ] })
       ] }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-full md:w-1/2 flex justify-center md:justify-start mt-12 md:mt-0", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-full max-w-[360px] md:max-w-none md:w-[98%] h-auto sm:h-[320px] md:h-[70%]\n                  rounded-xl md:rounded-full\n                  overflow-hidden bg-white\n                  md:-translate-x-[15%] md:-translate-y-[10%]", children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-full md:w-1/2 flex justify-center md:justify-start mt-8 md:mt-0", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-full max-w-[360px] md:max-w-none md:w-[98%] h-[280px] sm:h-[320px] md:h-[70%]\n                  rounded-xl md:rounded-full\n                  overflow-hidden bg-white\n                  md:-translate-x-[15%] md:-translate-y-[10%]", children: /* @__PURE__ */ jsxRuntimeExports.jsx(
         "img",
         {
           src: approachItems2[index2].image,
@@ -14405,7 +14871,7 @@ function ApproachSection({ approachItems: approachItems2, index: index2, setInde
   ] });
 }
 function ContactSection() {
-  return /* @__PURE__ */ jsxRuntimeExports.jsxs("section", { id: "contact", className: "mt-28 sm:mt-32 mb-20 text-center px-4", children: [
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs("section", { id: "contact", className: "mt-20 sm:mt-32 mb-20 text-center px-4", children: [
     /* @__PURE__ */ jsxRuntimeExports.jsxs("h2", { className: "font-bold text-[24px] sm:text-[36px] md:text-[40px] leading-tight text-[#0b0a72]", children: [
       "Ready to Build Your ",
       /* @__PURE__ */ jsxRuntimeExports.jsx("br", {}),
@@ -14413,7 +14879,7 @@ function ContactSection() {
     ] }),
     /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "mt-4 text-gray-800 text-sm sm:text-lg max-w-3xl mx-auto", children: "Let us create a digital solution that boosts efficiency, engages users, and accelerates growth for your startup or SME." }),
     /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "relative mt-12 sm:mt-16 max-w-6xl mx-auto", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "block relative md:absolute right-0 top-[5%] bottom-[5%] w-full md:w-1/2 h-[220px] md:h-auto rounded-2xl overflow-hidden shadow-lg mb-6 md:mb-0", children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "block relative md:absolute right-0 top-[5%] bottom-[5%] w-full md:w-1/2 h-[220px] md:h-auto rounded-2xl overflow-hidden shadow-lg mb-8 md:mb-0", children: /* @__PURE__ */ jsxRuntimeExports.jsx(
         "img",
         {
           src: group69,
@@ -14563,7 +15029,6 @@ function Contact() {
 }
 const subtract = "/assets/Subtract-BZqBcZTP.png";
 const complexImg = "/assets/Complex-ZY-RcHcH.jpg";
-const ourImg1 = "/assets/Our%202-NuyLKAhf.png";
 const ourImg2 = "/assets/Our%201-Cku8QEgt.png";
 const partnerImg = "/assets/unsplash_vZJdYl5JVXY-DkRNwXAI.png";
 function Home() {
@@ -14699,21 +15164,28 @@ function Home() {
           /* @__PURE__ */ jsxRuntimeExports.jsx("button", { className: "w-11 h-11 rounded-full bg-[#EEF1FF] text-[#0B0F5C] shadow flex items-center justify-center", children: "→" })
         ] })
       ] }) }),
-      /* @__PURE__ */ jsxRuntimeExports.jsxs("section", { className: "py-2 text-center", children: [
-        /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "font-bold text-[40px] leading-[110%] text-[#050363]", children: "Why Partner with Us" }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "mt-2  text-gray-800 text-lg max-w-3xl mx-auto", children: "Provide a general summary of the services you provide, highlighting key features and benefits." }),
-        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "mt-12 relative rounded-xl overflow-hidden shadow-lg", children: [
-          /* @__PURE__ */ jsxRuntimeExports.jsx("img", { src: partnerImg, className: "w-full h-[420px] object-cover" }),
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("section", { className: "py-10 px-4 text-center", children: [
+        /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "font-bold text-[26px] sm:text-[32px] md:text-[40px] leading-[110%] text-[#050363]", children: "Why Partner with Us" }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "mt-2 text-gray-800 text-sm sm:text-base md:text-lg max-w-3xl mx-auto", children: "Provide a general summary of the services you provide, highlighting key features and benefits." }),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "mt-10 relative rounded-xl overflow-hidden shadow-lg", children: [
+          /* @__PURE__ */ jsxRuntimeExports.jsx(
+            "img",
+            {
+              src: partnerImg,
+              className: "w-full h-[240px] sm:h-[320px] md:h-[420px] object-cover",
+              alt: "partner"
+            }
+          ),
           /* @__PURE__ */ jsxRuntimeExports.jsxs(
             "div",
             {
-              className: "absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2\n                            bg-[#DEE6FA] w-[760px] h-[170px] rounded-md flex items-center px-10 gap-8",
+              className: "\n        absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2\n        bg-[#DEE6FA]\n        w-[92%] sm:w-[520px] md:w-[760px]\n        min-h-[160px]\n        rounded-md\n        flex flex-col sm:flex-row\n        items-center\n        px-4 sm:px-8\n        py-4\n        gap-4 sm:gap-8\n      ",
               children: [
-                /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "font-bold text-[40px] leading-[110%] text-[#050363]", children: "Speed & Efficiency" }),
-                /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-[85px] h-[110px] overflow-hidden", children: /* @__PURE__ */ jsxRuntimeExports.jsx("img", { src: partnerImg, className: "w-full h-full object-cover" }) }),
-                /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex-1 text-sm text-gray-600", children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "font-bold text-[22px] sm:text-[28px] md:text-[40px] leading-[110%] text-[#050363] text-center sm:text-left", children: "Speed & Efficiency" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "w-[60px] h-[80px] sm:w-[85px] sm:h-[110px] overflow-hidden rounded", children: /* @__PURE__ */ jsxRuntimeExports.jsx("img", { src: partnerImg, className: "w-full h-full object-cover", alt: "" }) }),
+                /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex-1 text-xs sm:text-sm text-gray-600 text-center sm:text-left", children: [
                   "Launch your MVP or application quickly without compromising quality.",
-                  /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex gap-3 mt-4", children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex justify-center sm:justify-start gap-3 mt-4", children: [
                     /* @__PURE__ */ jsxRuntimeExports.jsx("button", { className: "w-9 h-9 rounded-full bg-white border", children: "←" }),
                     /* @__PURE__ */ jsxRuntimeExports.jsx("button", { className: "w-9 h-9 rounded-full bg-white border", children: "→" })
                   ] })
@@ -14828,54 +15300,70 @@ const projects = [
 ];
 function Projects() {
   const [index2, setIndex] = reactExports.useState(0);
-  const next = () => setIndex((i) => (i + 1) % projects.length);
-  const prev = () => setIndex((i) => (i - 1 + projects.length) % projects.length);
+  const itemRefs = reactExports.useRef([]);
+  const scrollToIndex = (i) => {
+    setIndex(i);
+    const el = itemRefs.current[i];
+    if (el) {
+      el.scrollIntoView({
+        behavior: "smooth",
+        inline: "center",
+        block: "nearest"
+      });
+    }
+  };
+  const next = () => scrollToIndex((index2 + 1) % projects.length);
+  const prev = () => scrollToIndex((index2 - 1 + projects.length) % projects.length);
   return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "min-h-screen bg-white", children: [
     /* @__PURE__ */ jsxRuntimeExports.jsx(Navbar, {}),
     /* @__PURE__ */ jsxRuntimeExports.jsxs("section", { className: "max-w-7xl mx-auto px-6 pt-24", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsxs("h2", { className: "font-bold text-[26px] sm:text-[36px] md:text-[50px] leading-tight tracking-[2%] text-[#11105b]", children: [
-        "Our Ongoing Projects ",
-        /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-indigo-900" })
-      ] }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "mt-3 text-gray-600 max-w-xl", children: "Discover the projects where ideas became digital products, tailored for startups and growing businesses alike." }),
-      /* @__PURE__ */ jsxRuntimeExports.jsxs("button", { className: "mt-6 inline-flex items-center gap-3 px-6 py-3 rounded-full border border-indigo-800 text-indigo-900 font-semibold hover:bg-indigo-700 hover:text-white transition", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "font-bold text-[26px] sm:text-[36px] md:text-[50px] leading-tight tracking-[2%] text-[#11105b]", children: "Our Ongoing Projects" }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "mt-3 text-gray-00 text-sm sm:text-lg max-w-3xl ", children: "Discover the projects where ideas became digital products, tailored for startups and growing businesses alike." }),
+      /* @__PURE__ */ jsxRuntimeExports.jsxs("button", { className: "mt-6 inline-flex items-center gap-3 px-6 py-3 rounded-full border border-indigo-800 text-indigo-800 font-semibold hover:bg-indigo-700 hover:text-white transition", children: [
         "Start Your Project",
-        /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "w-7 h-7 rounded-full bg-indigo-700 text-white flex items-center justify-center", children: "→" })
+        /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "w-7 h-7 rounded-full bg-indigo-900 text-white flex items-center justify-center", children: "→" })
       ] }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "relative mt-14 overflow-x-auto", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex gap-6 flex-nowrap pb-4", children: projects.map((p, i) => /* @__PURE__ */ jsxRuntimeExports.jsx(
+      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "relative mt-14 overflow-x-auto", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex gap-6 flex-nowrap pb-6 scroll-smooth", children: projects.map((p, i) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
         "div",
         {
-          onClick: () => setIndex(i),
-          className: `min-w-[260px] h-[420px] bg-white rounded-3xl border overflow-hidden cursor-pointer transition-all duration-300 ${i === index2 ? "border-indigo-900 scale-110 shadow-lg" : "border-indigo-300 opacity-60 scale-95 hover:opacity-100"}`,
-          children: /* @__PURE__ */ jsxRuntimeExports.jsx(
-            "img",
-            {
-              src: p.image,
-              alt: p.title,
-              className: "w-full h-full object-cover"
-            }
-          )
-        },
-        p.slug
-      )) }) }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex gap-3 mt-6 flex-nowrap overflow-x-auto whitespace-nowrap pb-2", children: projects.map((p, i) => /* @__PURE__ */ jsxRuntimeExports.jsxs(
-        "button",
-        {
-          onClick: () => setIndex(i),
-          className: `flex items-center justify-between gap-2 w-[260px] px-5 py-2 rounded-full border text-sm font-medium transition ${i === index2 ? "bg-indigo-900 text-white" : "border-indigo-300 text-indigo-900 hover:bg-indigo-50"}`,
+          ref: (el) => itemRefs.current[i] = el,
+          onClick: () => scrollToIndex(i),
+          className: "min-w-[260px] flex flex-col items-center cursor-pointer",
           children: [
-            p.title,
             /* @__PURE__ */ jsxRuntimeExports.jsx(
-              "span",
+              "div",
               {
-                className: `w-6 h-6 rounded-full flex items-center justify-center ${i === index2 ? "bg-white text-indigo-900" : "border border-indigo-400"}`,
-                children: "→"
+                className: `h-[420px] w-full bg-white rounded-3xl border overflow-hidden transition-all duration-300 ${i === index2 ? "border-indigo-900 scale-110 shadow-lg" : "border-indigo-300 opacity-60 scale-95 hover:opacity-100"}`,
+                children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+                  "img",
+                  {
+                    src: p.image,
+                    alt: p.title,
+                    className: "w-full h-full object-cover"
+                  }
+                )
+              }
+            ),
+            /* @__PURE__ */ jsxRuntimeExports.jsxs(
+              "button",
+              {
+                className: `mt-4 flex items-center justify-between gap-2 w-full px-5 py-2 rounded-full border text-sm font-medium transition ${i === index2 ? "bg-indigo-900 text-white" : "border-indigo-300 text-indigo-900 hover:bg-indigo-50"}`,
+                children: [
+                  p.title,
+                  /* @__PURE__ */ jsxRuntimeExports.jsx(
+                    "span",
+                    {
+                      className: `w-6 h-6 rounded-full flex items-center justify-center ${i === index2 ? "bg-white text-indigo-900" : "border border-indigo-400"}`,
+                      children: "→"
+                    }
+                  )
+                ]
               }
             )
           ]
         },
         p.slug
-      )) }),
+      )) }) }),
       /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex gap-4 mt-6", children: [
         /* @__PURE__ */ jsxRuntimeExports.jsx(
           "button",
@@ -14896,7 +15384,7 @@ function Projects() {
       ] })
     ] }),
     /* @__PURE__ */ jsxRuntimeExports.jsxs("main", { className: "mx-auto max-w-6xl px-4 py-20", children: [
-      /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "text-3xl font-extrabold text-gray-900 mb-10", children: /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-indigo-800", children: "Our Projects" }) }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx("h2", { className: "mb-10 font-bold text-[26px] sm:text-[36px] md:text-[50px] leading-tight tracking-[2%] text-[#11105b]", children: /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-indigo-900", children: "Our Projects" }) }),
       /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "space-y-8", children: projects.map((p) => /* @__PURE__ */ jsxRuntimeExports.jsx(Link, { to: `/projects/${p.slug}`, className: "block group", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-col md:flex-row rounded-3xl overflow-hidden border border-indigo-100 shadow-md bg-white hover:shadow-xl transition", children: [
         /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "md:w-1/2 h-56 md:h-auto", children: /* @__PURE__ */ jsxRuntimeExports.jsx(
           "img",
@@ -14908,7 +15396,7 @@ function Projects() {
         ) }),
         /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "md:w-1/2 p-8 flex flex-col justify-center", children: [
           /* @__PURE__ */ jsxRuntimeExports.jsx("h3", { className: "text-2xl font-extrabold text-indigo-900", children: p.title }),
-          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "mt-3 text-gray-700 leading-relaxed", children: "Smart platform built for modern businesses and startups." }),
+          /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "mt-3 text-gray-00 text-sm sm:text-lg max-w-3xl", children: "Smart platform built for modern businesses and startups." }),
           /* @__PURE__ */ jsxRuntimeExports.jsxs("span", { className: "mt-6 inline-flex items-center gap-3 text-indigo-900 font-semibold", children: [
             "View Project",
             /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "w-8 h-8 rounded-full bg-indigo-900 text-white flex items-center justify-center", children: "➜" })
@@ -14956,6 +15444,8 @@ function App() {
     /* @__PURE__ */ jsxRuntimeExports.jsx(Route, { path: "/", element: /* @__PURE__ */ jsxRuntimeExports.jsx(Splash, {}) }),
     /* @__PURE__ */ jsxRuntimeExports.jsx(Route, { path: "/home", element: /* @__PURE__ */ jsxRuntimeExports.jsx(Home, {}) }),
     /* @__PURE__ */ jsxRuntimeExports.jsx(Route, { path: "/application", element: /* @__PURE__ */ jsxRuntimeExports.jsx(Application, {}) }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx(Route, { path: "/About", element: /* @__PURE__ */ jsxRuntimeExports.jsx(About, {}) }),
+    /* @__PURE__ */ jsxRuntimeExports.jsx(Route, { path: "/MVP", element: /* @__PURE__ */ jsxRuntimeExports.jsx(Application$1, {}) }),
     /* @__PURE__ */ jsxRuntimeExports.jsx(Route, { path: "/projects", element: /* @__PURE__ */ jsxRuntimeExports.jsx(Projects, {}) }),
     /* @__PURE__ */ jsxRuntimeExports.jsx(Route, { path: "/projects/:slug", element: /* @__PURE__ */ jsxRuntimeExports.jsx(ProjectDetail, {}) }),
     /* @__PURE__ */ jsxRuntimeExports.jsx(Route, { path: "/contact", element: /* @__PURE__ */ jsxRuntimeExports.jsx(Contact, {}) }),
