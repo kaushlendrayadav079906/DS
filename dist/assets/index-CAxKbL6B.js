@@ -14952,7 +14952,7 @@ function Splash() {
   );
 }
 function App() {
-  return /* @__PURE__ */ jsxRuntimeExports.jsx(BrowserRouter, { children: /* @__PURE__ */ jsxRuntimeExports.jsxs(Routes, { children: [
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs(Routes, { children: [
     /* @__PURE__ */ jsxRuntimeExports.jsx(Route, { path: "/", element: /* @__PURE__ */ jsxRuntimeExports.jsx(Splash, {}) }),
     /* @__PURE__ */ jsxRuntimeExports.jsx(Route, { path: "/home", element: /* @__PURE__ */ jsxRuntimeExports.jsx(Home, {}) }),
     /* @__PURE__ */ jsxRuntimeExports.jsx(Route, { path: "/application", element: /* @__PURE__ */ jsxRuntimeExports.jsx(Application, {}) }),
@@ -14960,7 +14960,7 @@ function App() {
     /* @__PURE__ */ jsxRuntimeExports.jsx(Route, { path: "/projects/:slug", element: /* @__PURE__ */ jsxRuntimeExports.jsx(ProjectDetail, {}) }),
     /* @__PURE__ */ jsxRuntimeExports.jsx(Route, { path: "/contact", element: /* @__PURE__ */ jsxRuntimeExports.jsx(Contact, {}) }),
     /* @__PURE__ */ jsxRuntimeExports.jsx(Route, { path: "*", element: /* @__PURE__ */ jsxRuntimeExports.jsx(Navigate, { to: "/", replace: true }) })
-  ] }) });
+  ] });
 }
 clientExports.createRoot(document.getElementById("root")).render(
   /* @__PURE__ */ jsxRuntimeExports.jsx(React$2.StrictMode, { children: /* @__PURE__ */ jsxRuntimeExports.jsx(BrowserRouter, { children: /* @__PURE__ */ jsxRuntimeExports.jsx(App, {}) }) })

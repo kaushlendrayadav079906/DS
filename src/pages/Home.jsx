@@ -189,45 +189,58 @@ export default function Home() {
         </section>
 
         {/* ================= WHY PARTNER ================= */}
-        <section className="py-2 text-center">
-          <h2 className="font-bold text-[40px] leading-[110%] text-[#050363]">
-            Why Partner with Us
-          </h2>
-          <p className="mt-2  text-gray-800 text-lg max-w-3xl mx-auto">
-            Provide a general summary of the services you provide, highlighting
-            key features and benefits.
-          </p>
+<section className="py-10 px-4 text-center">
+  <h2 className="font-bold text-[26px] sm:text-[32px] md:text-[40px] leading-[110%] text-[#050363]">
+    Why Partner with Us
+  </h2>
 
-          <div className="mt-12 relative rounded-xl overflow-hidden shadow-lg">
-            <img src={partnerImg} className="w-full h-[420px] object-cover" />
+  <p className="mt-2 text-gray-800 text-sm sm:text-base md:text-lg max-w-3xl mx-auto">
+    Provide a general summary of the services you provide, highlighting
+    key features and benefits.
+  </p>
 
-            <div
-              className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2
-                            bg-[#DEE6FA] w-[760px] h-[170px] rounded-md flex items-center px-10 gap-8"
-            >
-              <h3 className="font-bold text-[40px] leading-[110%] text-[#050363]">
-                Speed & Efficiency
-              </h3>
+  <div className="mt-10 relative rounded-xl overflow-hidden shadow-lg">
+    <img
+      src={partnerImg}
+      className="w-full h-[240px] sm:h-[320px] md:h-[420px] object-cover"
+      alt="partner"
+    />
 
-              <div className="w-[85px] h-[110px] overflow-hidden">
-                <img src={partnerImg} className="w-full h-full object-cover" />
-              </div>
+    {/* Overlay Card */}
+    <div
+      className="
+        absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2
+        bg-[#DEE6FA]
+        w-[92%] sm:w-[520px] md:w-[760px]
+        min-h-[160px]
+        rounded-md
+        flex flex-col sm:flex-row
+        items-center
+        px-4 sm:px-8
+        py-4
+        gap-4 sm:gap-8
+      "
+    >
+      <h3 className="font-bold text-[22px] sm:text-[28px] md:text-[40px] leading-[110%] text-[#050363] text-center sm:text-left">
+        Speed & Efficiency
+      </h3>
 
-              <div className="flex-1 text-sm text-gray-600">
-                Launch your MVP or application quickly without compromising
-                quality.
-                <div className="flex gap-3 mt-4">
-                  <button className="w-9 h-9 rounded-full bg-white border">
-                    ←
-                  </button>
-                  <button className="w-9 h-9 rounded-full bg-white border">
-                    →
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+      <div className="w-[60px] h-[80px] sm:w-[85px] sm:h-[110px] overflow-hidden rounded">
+        <img src={partnerImg} className="w-full h-full object-cover" alt="" />
+      </div>
+
+      <div className="flex-1 text-xs sm:text-sm text-gray-600 text-center sm:text-left">
+        Launch your MVP or application quickly without compromising quality.
+
+        <div className="flex justify-center sm:justify-start gap-3 mt-4">
+          <button className="w-9 h-9 rounded-full bg-white border">←</button>
+          <button className="w-9 h-9 rounded-full bg-white border">→</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
         {/* ================= FINAL CTA ================= */}
         <section className="py-28 text-center">

@@ -1,5 +1,4 @@
 import group69 from "../assets/Group/Group 69.png";
-import logo from "../assets/icons/Logo-removebg-preview.png";
 import Footer from "../components/Footer.jsx";
 import Navbar from "../components/Navbar.jsx";
 

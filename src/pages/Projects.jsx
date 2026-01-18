@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar.jsx";
 
@@ -22,9 +22,23 @@ const projects = [
 
 export default function Projects() {
   const [index, setIndex] = useState(0);
+  const itemRefs = useRef([]);
 
-  const next = () => setIndex((i) => (i + 1) % projects.length);
-  const prev = () => setIndex((i) => (i - 1 + projects.length) % projects.length);
+  const scrollToIndex = (i) => {
+    setIndex(i);
+
+    const el = itemRefs.current[i];
+    if (el) {
+      el.scrollIntoView({
+        behavior: "smooth",
+        inline: "center",
+        block: "nearest",
+      });
+    }
+  };
+
+  const next = () => scrollToIndex((index + 1) % projects.length);
+  const prev = () => scrollToIndex((index - 1 + projects.length) % projects.length);
 
   return (
     <div className="min-h-screen bg-white">
@@ -33,65 +47,67 @@ export default function Projects() {
       {/* ================= Ongoing Projects ================= */}
       <section className="max-w-7xl mx-auto px-6 pt-24">
         <h2 className="font-bold text-[26px] sm:text-[36px] md:text-[50px] leading-tight tracking-[2%] text-[#11105b]">
-          Our Ongoing Projects <span className="text-indigo-900"></span>
+          Our Ongoing Projects
         </h2>
 
-        <p className="mt-3 text-gray-600 max-w-xl">
+        <p className="mt-3 text-gray-00 text-sm sm:text-lg max-w-3xl ">
           Discover the projects where ideas became digital products, tailored for startups and growing businesses alike.
         </p>
 
-        <button className="mt-6 inline-flex items-center gap-3 px-6 py-3 rounded-full border border-indigo-800 text-indigo-900 font-semibold hover:bg-indigo-700 hover:text-white transition">
+        <button className="mt-6 inline-flex items-center gap-3 px-6 py-3 rounded-full border border-indigo-800 text-indigo-800 font-semibold hover:bg-indigo-700 hover:text-white transition">
           Start Your Project
-          <span className="w-7 h-7 rounded-full bg-indigo-700 text-white flex items-center justify-center">→</span>
+          <span className="w-7 h-7 rounded-full bg-indigo-900 text-white flex items-center justify-center">→</span>
         </button>
 
-        {/* Images row */}
+        {/* Images + Names row together */}
         <div className="relative mt-14 overflow-x-auto">
-          <div className="flex gap-6 flex-nowrap pb-4">
+          <div className="flex gap-6 flex-nowrap pb-6 scroll-smooth">
+
             {projects.map((p, i) => (
               <div
                 key={p.slug}
-                onClick={() => setIndex(i)}
-                className={`min-w-[260px] h-[420px] bg-white rounded-3xl border overflow-hidden cursor-pointer transition-all duration-300 ${
-                  i === index
-                    ? "border-indigo-900 scale-110 shadow-lg"
-                    : "border-indigo-300 opacity-60 scale-95 hover:opacity-100"
-                }`}
+                ref={(el) => (itemRefs.current[i] = el)}
+                onClick={() => scrollToIndex(i)}
+                className="min-w-[260px] flex flex-col items-center cursor-pointer"
               >
-                <img
-                  src={p.image}
-                  alt={p.title}
-                  className="w-full h-full object-cover"
-                />
+                {/* Image */}
+                <div
+                  className={`h-[420px] w-full bg-white rounded-3xl border overflow-hidden transition-all duration-300 ${
+                    i === index
+                      ? "border-indigo-900 scale-110 shadow-lg"
+                      : "border-indigo-300 opacity-60 scale-95 hover:opacity-100"
+                  }`}
+                >
+                  <img
+                    src={p.image}
+                    alt={p.title}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+
+                {/* Name */}
+                <button
+                  className={`mt-4 flex items-center justify-between gap-2 w-full px-5 py-2 rounded-full border text-sm font-medium transition ${
+                    i === index
+                      ? "bg-indigo-900 text-white"
+                      : "border-indigo-300 text-indigo-900 hover:bg-indigo-50"
+                  }`}
+                >
+                  {p.title}
+                  <span
+                    className={`w-6 h-6 rounded-full flex items-center justify-center ${
+                      i === index
+                        ? "bg-white text-indigo-900"
+                        : "border border-indigo-400"
+                    }`}
+                  >
+                    →
+                  </span>
+                </button>
               </div>
             ))}
-          </div>
-        </div>
 
-        {/* Names row */}
-        <div className="flex gap-3 mt-6 flex-nowrap overflow-x-auto whitespace-nowrap pb-2">
-          {projects.map((p, i) => (
-            <button
-              key={p.slug}
-              onClick={() => setIndex(i)}
-              className={`flex items-center justify-between gap-2 w-[260px] px-5 py-2 rounded-full border text-sm font-medium transition ${
-                i === index
-                  ? "bg-indigo-900 text-white"
-                  : "border-indigo-300 text-indigo-900 hover:bg-indigo-50"
-              }`}
-            >
-              {p.title}
-              <span
-                className={`w-6 h-6 rounded-full flex items-center justify-center ${
-                  i === index
-                    ? "bg-white text-indigo-900"
-                    : "border border-indigo-400"
-                }`}
-              >
-                →
-              </span>
-            </button>
-          ))}
+          </div>
         </div>
 
         {/* Arrows */}
@@ -113,9 +129,10 @@ export default function Projects() {
 
       {/* ================= Full Projects Section ================= */}
       <main className="mx-auto max-w-6xl px-4 py-20">
-        <h2 className="text-3xl font-extrabold text-gray-900 mb-10">
-          <span className="text-indigo-800">Our Projects</span>
-        </h2>
+       <h2 className="mb-10 font-bold text-[26px] sm:text-[36px] md:text-[50px] leading-tight tracking-[2%] text-[#11105b]">
+  <span className="text-indigo-900">Our Projects</span>
+</h2>
+
 
         <div className="space-y-8">
           {projects.map((p) => (
@@ -134,7 +151,7 @@ export default function Projects() {
                     {p.title}
                   </h3>
 
-                  <p className="mt-3 text-gray-700 leading-relaxed">
+                  <p className="mt-3 text-gray-00 text-sm sm:text-lg max-w-3xl">
                     Smart platform built for modern businesses and startups.
                   </p>
 

@@ -22,8 +22,8 @@ export default function Navbar() {
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center">
             <div className="rounded-full px-6 py-2 bg-[#0B0F5C] text-white shadow flex items-center gap-6 text-sm font-medium">
-              <a href="#about" className="hover:opacity-80">About</a>
-              <a href="#mvp" className="hover:opacity-80">MVP Development</a>
+              <Link to="/About" className="hover:opacity-80">About</Link>
+              <a href="/MVP" className="hover:opacity-80">MVP Development</a>
               <Link to="/application" className="hover:opacity-80">Application Development</Link>
               <Link to="/contact" className="hover:opacity-80">Contact Us</Link>
             </div>
@@ -53,8 +53,8 @@ export default function Navbar() {
       <div className={`mobile-menu ${open ? 'open' : ''}`}>
         <button className="close-btn" onClick={() => setOpen(false)}>✕</button>
 
-        <a className="menu-item" href="#about" onClick={() => setOpen(false)}>About</a>
-        <a className="menu-item" href="#mvp" onClick={() => setOpen(false)}>MVP Development</a>
+        <Link className="menu-item" to="/About" onClick={() => setOpen(false)}>About</Link>
+        <a className="menu-item" href="/MVP" onClick={() => setOpen(false)}>MVP Development</a>
         <Link className="menu-item" to="/application" onClick={() => setOpen(false)}>
           Application Development
         </Link>

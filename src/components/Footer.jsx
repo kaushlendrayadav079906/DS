@@ -5,10 +5,11 @@ import logo from "../assets/icons/Logo-removebg-preview.png";
 export default function Footer() {
   return (
     <footer className="w-full bg-white font-sans overflow-x-hidden">
-      <div className="max-w-[1400px] mx-auto">
+      <div className="max-w-[1500px] ">
 
         {/* Main Blue Container */}
-        <div className="bg-[#DCE4F7] relative">
+        <div className="relative w-full bg-[#DCE4F7]">
+
 
           {/* TOP SECTION */}
           <div className="flex flex-col md:flex-row justify-between items-start">
