@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import videoElement from "../assets/icons/Logo.mp4"; // Importing the video
-import logo from "../assets/icons/logo_name.png";
+import logo from "../assets/icons/logo1.png";
 
 export default function Splash() {
   const navigate = useNavigate();

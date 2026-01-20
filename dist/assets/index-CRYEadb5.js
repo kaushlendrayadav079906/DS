@@ -14075,7 +14075,7 @@ function FaInstagram(props) {
 function FaLinkedinIn(props) {
   return GenIcon({ "attr": { "viewBox": "0 0 448 512" }, "child": [{ "tag": "path", "attr": { "d": "M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" }, "child": [] }] })(props);
 }
-const logo$1 = "/assets/Logo_name-CtZ_w01V.png";
+const logo = "/assets/logo1-CtZ_w01V.png";
 function Footer() {
   return /* @__PURE__ */ jsxRuntimeExports.jsx("footer", { className: "w-full bg-white font-sans overflow-x-hidden", children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "max-w-[1500px] ", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "relative w-full bg-[#DCE4F7]", children: [
     /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex flex-col md:flex-row justify-between items-start", children: [
@@ -14089,7 +14089,7 @@ function Footer() {
           children: /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex items-center gap-3 justify-center md:justify-start", children: /* @__PURE__ */ jsxRuntimeExports.jsx(
             "img",
             {
-              src: logo$1,
+              src: logo,
               alt: "DatenStrom-3AG Solutions Logo",
               className: "h-[48px] w-auto sm:h-[52px] md:h-[56px]"
             }
@@ -14152,7 +14152,7 @@ function Navbar({ transparent = false }) {
       /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "flex items-center gap-3", children: /* @__PURE__ */ jsxRuntimeExports.jsx(
         "img",
         {
-          src: logo$1,
+          src: logo,
           alt: "DatenStrom-3AG Solutions Logo",
           className: "h-[48px] w-auto sm:h-[52px] md:h-[56px]"
         }
@@ -15424,7 +15424,6 @@ function Projects() {
   ] });
 }
 const videoElement = "/assets/Logo-DROedcO8.mp4";
-const logo = "/assets/Logo_name-CtZ_w01V.png";
 function Splash() {
   const navigate = useNavigate();
   const [isVideoPlaying, setIsVideoPlaying] = reactExports.useState(false);
