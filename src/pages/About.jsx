@@ -89,7 +89,7 @@ export default function About() {
 
       <main className="flex-1 w-full overflow-hidden">
         {/* ---------------- OUR PURPOSE ---------------- */}
-        <section className="w-full bg-[#EEF1FB] pt-20 pb-20">
+        <section className="mt-[135px] w-full bg-[#EEF1FB] pt-20 pb-20">
           <div className="max-w-[1728px] mx-auto px-10 pt-20">
             <div className="relative w-full h-auto lg:h-[400px] rounded-[32px] overflow-hidden shadow-2xl">
               {/* Background Image */}

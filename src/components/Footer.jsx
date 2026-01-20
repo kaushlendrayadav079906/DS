@@ -1,6 +1,5 @@
-import React from "react";
-import { FaLinkedinIn, FaInstagram } from "react-icons/fa";
-import logo from "../assets/icons/Logo-removebg-preview.png";
+import { FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import logo from "../assets/icons/Logo_name.png";
 
 export default function Footer() {
   return (
@@ -25,19 +24,11 @@ export default function Footer() {
               }}
             >
               <div className="flex items-center gap-3 justify-center md:justify-start">
-                <img
-                  src={logo}
-                  className="w-10 h-10 object-contain"
-                  alt="logo"
-                />
-                <div>
-                  <span className="block text-[#414141] font-bold text-lg sm:text-[26px] leading-tight">
-                    DatenStrom-3AG
-                  </span>
-                  <span className="block text-[#414141] font-bold text-lg sm:text-[26px] leading-tight">
-                    Solutions
-                  </span>
-                </div>
+               <img
+                 src={logo}
+                 alt="DatenStrom-3AG Solutions Logo"
+                 className="h-[48px] w-auto sm:h-[52px] md:h-[56px]"
+               />
               </div>
             </div>
 
@@ -55,12 +46,34 @@ export default function Footer() {
             {/* Button + Socials */}
             <div className="flex flex-col sm:flex-row items-center gap-6">
 
-              <button className="flex items-center gap-3 bg-white px-5 py-2.5 rounded-full text-sm font-bold text-[#1F2A5A] border shadow-sm hover:shadow-md transition">
-                Book Consultation
-                <span className="bg-[#0A1140] text-white w-7 h-7 rounded-full flex items-center justify-center text-xs">
-                  →
-                </span>
-              </button>
+              <button className="
+  relative
+  flex items-center
+  pl-5 pr-12 py-2
+  rounded-full
+  border border-[#0B0F5C]
+  text-[#0B0F5C]
+  font-bold
+  text-sm
+  bg-white
+  shadow-sm
+  hover:shadow-md transition-all
+">
+  <span>Book Consultation</span>
+
+  <span className="
+    absolute right-[-2px]
+    w-9 h-9
+    rounded-full
+    bg-[#0B0F5C]
+    text-white
+    flex items-center justify-center
+    text-lg
+    font-bold
+  ">
+    →
+  </span>
+</button>
 
               <div className="flex gap-4">
                 <a
@@ -82,7 +95,7 @@ export default function Footer() {
             </div>
 
             {/* Contact Info */}
-            <div className="space-y-3 text-sm text-[#1F2A5A] w-full md:w-auto">
+            <div className="space-y-3 text-sm text-[#050363] w-full md:w-auto">
 
               <InfoRow label="Email" value="info@datenstrom-3ag.com" />
               <InfoRow label="Working Hours" value="Monday - Friday 9:00 - 18:00" />
@@ -98,10 +111,9 @@ export default function Footer() {
               © 2025 datenstrom-3ag.com . All Rights Reserved
             </div>
 
-            <div className="flex gap-6 sm:gap-12">
-              <a href="#" className="hover:underline">Privacy Policy</a>
-              <a href="#" className="hover:underline">Terms & Conditions</a>
-            </div>
+            <a href="#" className="hover:underline text-black">Privacy Policy</a>
+
+            <a href="#" className="hover:underline text-black">Terms and conditions</a>
 
           </div>
 

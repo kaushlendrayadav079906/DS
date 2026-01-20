@@ -52,7 +52,7 @@ export default function Application() {
       <div className="max-w-7xl mx-auto px-4">
 
         {/* HERO */}
-        <section className="mt-20 text-center pt-10">
+        <section className="mt-[150px] text-center pt-10">
           <h1 className="font-bold text-[26px] sm:text-[36px] md:text-[50px] leading-tight tracking-[2%] text-[#050363]">
             Custom Applications{" "}
             <br className="sm:hidden" />

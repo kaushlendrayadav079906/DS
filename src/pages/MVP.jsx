@@ -42,7 +42,7 @@ export default function Application() {
 
       <div className="max-w-7xl mx-auto px-4">
 
-     <section className="pt-28 pb-24 bg-white">
+     <section className=" mt-[150px] pt-28 pb-24 bg-white">
   <div className="max-w-7xl mx-auto px-4">
 
     {/* GRID */}

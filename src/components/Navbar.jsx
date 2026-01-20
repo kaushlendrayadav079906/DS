@@ -1,39 +1,46 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import logo from '../assets/icons/Logo-removebg-preview.png'
+import logo from '../assets/icons/Logo_name.png'
 
-export default function Navbar() {
+export default function Navbar({ transparent = false }) {
   const [open, setOpen] = useState(false)
 
   return (
     <>
       {/* ===== FIXED NAVBAR ===== */}
-      <header className="fixed top-0 left-0 w-full z-50 bg-white border-b border-indigo-100">
-        <nav className="mx-auto max-w-[1400px] h-[72px] flex items-center justify-between px-6">
+      <header className={`fixed top-0 left-0 w-full z-50 transition-all duration-300`}>
+        <nav className={`mx-auto max-w-[1728px] h-[134px] flex items-center justify-between px-10 transition-all duration-300 
+          ${transparent 
+            ? 'bg-transparent border-none shadow-none' 
+            : 'bg-[linear-gradient(to_bottom,#ffffff_50%,transparent_50%)] border-b border-[#9CA1CD]'
+          }`}>
 
           {/* Logo */}
           <div className="flex items-center gap-3">
-            <img src={logo} alt="Logo" className="w-9 h-9 rounded" />
-           <span className="text-[#414141] font-bold text-[26px] leading-[1] tracking-tight">
-                    DatenStrom-3AG Solutions
-                  </span>
+          <img
+  src={logo}
+  alt="DatenStrom-3AG Solutions Logo"
+  className="h-[48px] w-auto sm:h-[52px] md:h-[56px]"
+/>
+
+           
           </div>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex items-center">
-            <div className="rounded-full px-6 py-2 bg-[#0B0F5C] text-white shadow flex items-center gap-6 text-sm font-medium">
-              <Link to="/About" className="hover:opacity-80">About</Link>
-              <a href="/MVP" className="hover:opacity-80">MVP Development</a>
-              <Link to="/application" className="hover:opacity-80">Application Development</Link>
-              <Link to="/contact" className="hover:opacity-80">Contact Us</Link>
+          <div className="hidden md:flex flex-1 justify-center">
+            <div className="rounded-full px-8 py-3 bg-[#0B0F5C] text-white shadow-lg flex items-center gap-8 text-sm font-medium">
+              <Link to="/About" className="hover:text-gray-200 transition">About</Link>
+              <a href="/MVP" className="hover:text-gray-200 transition">MVP Development</a>
+              <Link to="/application" className="hover:text-gray-200 transition">Application Development</Link>
+              <Link to="/contact" className="hover:text-gray-200 transition">Contact Us</Link>
             </div>
           </div>
 
           {/* CTA Button */}
           <div className="hidden md:block">
             <Link
-              to="/application"
-              className="inline-block rounded-full bg-white text-[#0B0F5C] text-sm font-semibold px-5 py-2 border border-indigo-200 hover:bg-indigo-50 transition"
+              to="/Splash"
+              className="inline-block rounded-full bg-white text-[#0B0F5C] text-sm font-bold px-6 py-2 border border-[#0B0F5C] hover:bg-gray-50 transition shadow-sm"
             >
               Start Your Project
             </Link>
@@ -54,6 +61,7 @@ export default function Navbar() {
         <button className="close-btn" onClick={() => setOpen(false)}>✕</button>
 
         <Link className="menu-item" to="/About" onClick={() => setOpen(false)}>About</Link>
+        <Link className="menu-item" to="/page" onClick={() => setOpen(false)}>page</Link>
         <a className="menu-item" href="/MVP" onClick={() => setOpen(false)}>MVP Development</a>
         <Link className="menu-item" to="/application" onClick={() => setOpen(false)}>
           Application Development

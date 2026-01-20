@@ -9,7 +9,7 @@ export default function Contact() {
 
       <main className="relative z-10 mx-auto max-w-6xl px-4 pb-24 pt-20">
         {/* Header */}
-        <section className="mt-16 text-center">
+        <section className="mt-[150px] text-center">
           <h1 className="font-extrabold text-4xl md:text-5xl text-[#050363]">
             Let’s Build Your <span className="text-[#4f4e83]">Digital</span>
             <br /> Vision Together
