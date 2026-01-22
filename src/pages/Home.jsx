@@ -1,7 +1,8 @@
 import { useState } from "react";
 import complexImg from "../assets/Complext section/Complex.jpg";
-import heroBg from "../assets/Home/Image.png";
+import Gradient from "../assets/images/Gradient.png";
 import subtract from "../assets/images/Subtract.png";
+// import subtract from "../assets/images/Subtract.png";
 import ourImg2 from "../assets/Our Expertise/Our 1.png";
 import ourImg1 from "../assets/Our Expertise/Our 2.png";
 import partnerImg1 from "../assets/Partner/Partner1.png"; // ✅ REQUIRED
@@ -28,13 +29,13 @@ const partnerData = [
 ];
 const expertiseData = [
   {
-    title: "MVP Development for\nStartups",
+    title: "MVP Development for Startups",
     desc: "Rapidly transform your idea into a working MVP. Test your concept, gather user feedback, and enter the market faster with a product designed for growth.",
     leftImg: ourImg2,
     rightImg: ourImg1,
   },
   {
-    title: "App Development for\nSMEs",
+    title: "App Development for SMEs",
     desc: "Build scalable, secure, and high-performance applications tailored for small and medium businesses to improve operations and customer engagement.",
     leftImg: ourImg1,
     rightImg: ourImg2,
@@ -47,61 +48,79 @@ export default function Home() {
   const [partnerIndex, setPartnerIndex] = useState(0);
 
   return (
-    <div className="min-h-screen bg-white overflow-x-hidden">
-      <Navbar />
-
-      {/* ================= Hero Section ================= */}
-      <section
-        className="mt-12 relative mx-auto flex justify-center bg-gradient-to-b from-[#EEF1FB] to-[#E9EDFA] overflow-hidden"
-        style={{ width: "calc(100% - 12px)" }}
+    <div className="min-h-screen bg-white overflow-x-hidden font-sans">
+      <Navbar transparent />
+      {/* ================= HERO SECTION ================= */}
+            <section className="relative w-full min-h-[738px] flex flex-col items-center justify-center overflow-hidden bg-gradient-to-br from-[#AFA3E8] via-[#DAD7F3] to-[#E5E9F9]">
+              
+              {/* Gradients / Mesh Background Effects */}
+             <div
+        className="absolute inset-0 z-0 pointer-events-none bg-center bg-cover bg-no-repeat"
+        style={{ backgroundImage: `url(${Gradient})` }}
       >
-        <div
-          className="relative"
-          style={{
-            width: "min(1728px, 100%)",
-            top: "0px",
-            // left: "-6px",HERO SECTION
-          }}
-        >
-          <div
-             className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
-             style={{
-               backgroundImage: `url(${heroBg})`,
-             }}
-          />
-
-          <div className="relative z-10 max-w-[1400px] mx-auto px-6 pt-[120px] pb-20">
-            <div className="text-center max-w-5xl mx-auto">
-              <h1
-                className="font-bold text-[32px] md:text-[50px] leading-[110%] text-[#050363]"
+        {/* Gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-to-br from-[#8B7CDE]/50 via-[#DAD7F3]/40 to-[#B5BFF8]/50"></div>
+      </div>
+      
+      
+              <div className="relative z-10 w-full max-w-[1400px] mx-auto flex flex-col items-center text-center px-4 pt-[140px] md:pt-[160px]">
+                
+                {/* Main Headline */}
+                <h1
+                className="font-bold text-[48px] leading-[100%] text-[#050363]"
                 style={{ color: "#0B0F5C" }}
               >
                 Fast MVPs & Scalable Applications for <br />
                 Startups and SMEs
               </h1>
-              <p
-                className="mt-6 font-bevietnam font-normal text-[16px] md:text-[24px] leading-[120%] md:leading-[100%] text-[#131313] max-w-[1228px] mx-auto"
-                style={{ color: "#4F5B8C" }}
-              >
-                Turn your ideas into market-ready solution. We help startups
-                launch quickly and SMEs digitize efficiently with tailored
-                digital solutions.
-              </p>
-            </div>
-
-            <div className="mt-16 flex flex-col items-center">
-              <div className="relative w-full max-w-6xl rounded-[40px] overflow-hidden shadow-2xl">
-                <img
-                  src={subtract}
-                  alt="office"
-                  className="w-full h-[420px] md:h-[520px] object-cover"
-                />
-              </div>
-
-              <div className="mt-12 flex flex-col items-center gap-6 ">
-                <div className="w-8 h-8 rounded-full bg-[#0B0F5C] ml-[150px]" />
-                <button
-                  className="
+      
+                {/* Subheadline */}
+               <p className="
+        mt-8
+        font-bevietnam
+        font-normal
+        text-[24px]
+        leading-[100%]
+        tracking-[0]
+        text-center
+        text-[#050363]
+      ">
+         Turn your ideas into market-ready solution. We help startups launch
+                  
+                </p>
+                <p className="
+        mt-2
+        font-bevietnam
+        font-normal
+        text-[24px]
+        leading-[100%]
+        tracking-[0]
+        text-center
+        text-[#050363]
+      ">
+         
+                  quickly and SMEs digitize efficiently with tailored digital solutions.
+                </p>
+      
+      
+                 
+      
+                {/* Image Container */}
+                {/* Image Container */}
+               <div className="mt-8 relative w-full h-[140px] md:h-[200px] lg:h-[240px] max-w-[70%] md:max-w-[1200px] rounded-[24px] overflow-hidden shadow-xl">
+      
+                   <img
+                    src={subtract}
+                    alt="Office Workspace"
+                    className="w-full h-full object-cover"
+                  />
+                   {/* Overlay Gradient on Image */}
+                   <div className="absolute inset-0 bg-gradient-to-t from-[#0B0F5C]/50 to-transparent pointer-events-none"></div>
+                </div>
+      
+                {/* CTA Button */}
+                <div className="mt-8 flex justify-center">
+             <button className="
   relative
   flex items-center
   pl-5 pr-12 py-2
@@ -116,47 +135,60 @@ export default function Home() {
 ">
   <span>Start Your Project</span>
 
-                  <span className="absolute right-4 top-1/2 -translate-y-1/2 w-0 h-0 border-t-[6px] border-t-transparent border-l-[10px] border-l-[#0B0F5C] border-b-[6px] border-b-transparent"></span>
-                </button>
-              </div>
-            </div>
+  <span className="
+    absolute right-[-2px]
+    w-9 h-9
+    rounded-full
+    bg-[#0B0F5C]
+    text-white
+    flex items-center justify-center
+    text-lg
+    font-bold
+  ">
+    →
+  </span>
+</button>
           </div>
-        </div>
-      </section>
-
+      
+              </div>
+            </section>
       <main className="max-w-[1400px] mx-auto px-6">
         {/* ===== Complex Section ===== */}
         <section className="py-20 bg-white">
           <div className="max-w-[1400px] mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-16 px-6">
             {/* Text */}
             <div className="text-center md:text-left">
-              <h2 className="font-bold text-[28px] md:text-[40px] leading-[110%] text-[#050363]">
-                Bringing Ideas to Life Can Be
-                <br />
-                Complex
-              </h2>
+             <h2 className="font-semibold text-[48px] leading-[100%] text-[#050363] max-w-[780px]">
+  <span className="whitespace-nowrap">
+    Bringing Ideas to Life Can Be
+  </span>
+  <br />
+  Complex
+</h2>
 
-              <p className="mt-8 font-bevietnam
+
+             <p className="mt-12 font-bevietnam 
   font-normal
-  text-[16px] md:text-[24px]
+  text-[24px]
   leading-[100%]
   tracking-[0]
-  
-  text-[#4A4A4A]">
-                Startups often face tight timelines and limited budgets when
-                building their first MVP, while SMEs struggle to digitize
-                operations and create custom applications. Delays, unclear
-                priorities, and technical hurdles can slow growth and reduce
-                market impact.
-              </p>
+  text-[#4A4A4A]
+  max-w-[779px]">
+  Startups often face tight timelines and limited budgets when
+  building their first MVP, while SMEs struggle to digitize
+  operations and create custom applications. Delays, unclear
+  priorities, and technical hurdles can slow growth and reduce
+  market impact.
+</p>
+
             </div>
 
             {/* Image */}
-            <div className="flex justify-center md:justify-end">
+            <div className=" flex justify-center md:justify-end">
               <img
                 src={complexImg}
                 alt="Dashboard"
-                className="w-[480px] h-[280px] object-cover rounded-xl shadow-md"
+                className=" mt-12 w-[514px] h-[323px] object-cover rounded-[20px] shadow-md"
               />
             </div>
           </div>
@@ -165,35 +197,22 @@ export default function Home() {
         {/* ================= OUR EXPERTISE ================= */}
         <section className=" bg-white">
           <div className="max-w-[1552px] ml-auto mr-0 text-center px-6">
-            <h2 className="font-bold text-[28px] md:text-[40px] leading-[110%] text-[#050363]">
+            <h2 className="font-semibold text-[40px] leading-[100%] text-[#050363]">
               Our Expertise
             </h2>
-            <p className="mt-8 font-bevietnam
-  font-normal
-  text-[16px] md:text-[24px]
-  leading-[100%]
-  tracking-[0]
-  text-center
-  text-[#4A4A4A]
-">
-              Datenstrom-3AG simplifies the journey from concept to launch. Our
-              expert team delivers 
-            </p>
-            <p className="mt-2 font-bevietnam
-  font-normal
-  text-[16px] md:text-[24px]
-  leading-[100%]
-  tracking-[0]
-  text-center
-  text-[#4A4A4A]">fast, cost-effective, and scalable solutions that meet your business goals.</p>
+            <p className="mt-12 font-bevietnam font-normal text-[24px] leading-[100%] tracking-[0] text-center text-[#4A4A4A]">
+  Datenstrom-3AG simplifies the journey from concept to launch. Our expert team delivers <br />
+  fast, cost-effective, and scalable solutions that meet your business goals.
+</p>
+
             
-            <div className="mt-8 inline-flex items-center rounded-full border border-[#050363] bg-white p-[3px] ">
+            <div className="mt-8 inline-flex items-center rounded-full border border-[#050363] bg-white p-[3px] w-[700px] h-[50px]">
   <button
     onClick={() => setIndex(0)}
-    className={`px-8 py-3 text-[24px] rounded-full font-medium transition ${
+    className={`flex-1 h-full text-[24px] rounded-full font-semibold transition ${
       index === 0
         ? "bg-[#0B0F5C] text-white "
-        :  "bg-white text-[#0B0F5C]"
+        :  "bg-white text-[#000000]"
 
     }`}
   >
@@ -202,10 +221,10 @@ export default function Home() {
 
   <button
     onClick={() => setIndex(1)}
-    className={`px-8 py-3 text-[24px] rounded-full font-medium transition ${
+    className={`flex-1 h-full text-[24px] rounded-full font-semibold transition ${
       index === 1
         ? "bg-[#0B0F5C] text-white shadow"
-        : "bg-white text-[#0B0F5C]"
+        : "bg-white text-[#000000]"
 
     }`}
   >
@@ -215,7 +234,7 @@ export default function Home() {
 
             <div className="mt-10 grid grid-cols-1 lg:grid-cols-3 items-stretch gap-8 lg:gap-16">
              <div className="flex justify-center lg:justify-end">
-  <div className="border-[3px] border-[#8E95D9] w-full max-w-[450px] aspect-square overflow-hidden">
+  <div className="border-[3px] border-[#8E95D9] w-[425px] h-[425px] overflow-hidden rounded-[20px]">
     <img
       src={expertiseData[index].leftImg}
       alt="left"
@@ -225,14 +244,13 @@ export default function Home() {
 </div>
 
               <div className="text-center lg:text-left flex flex-col items-center lg:items-start text-left">
-                <h3 className="font-bold text-[32px] sm:text-[40px] leading-[110%] text-[#050363] whitespace-pre-line">
+                <h3 className="font-semibold text-[40px] leading-[100%] text-[#000000] max-w-[454px]">
                   {expertiseData[index].title}
                 </h3>
-                <p className="mt-8 font-bevietnam font-normal text-[24px] leading-[100%] tracking-[0] text- #000000];
-] max-w-xl mx-auto lg:mx-0">
+                <p className="mt-12 font-bevietnam font-normal text-[24px] leading-[100%] tracking-[0] text-[#000000] max-w-xl mx-auto lg:mx-0">
                   {expertiseData[index].desc}
                 </p>
-                <button className=" mt-10 lg:mt-20
+                <button className=" mt-10 lg:mt-[130px]
   relative
   flex items-center
   pl-5 pr-12 py-2
@@ -262,7 +280,7 @@ export default function Home() {
 </button>
               </div>
              <div className="flex justify-center lg:justify-start">
-  <div className="border-[3px] border-[#8E95D9] w-full max-w-[450px] aspect-square overflow-hidden">
+  <div className="border-[3px] border-[#8E95D9] w-[425px] h-[425px] overflow-hidden rounded-[20px]">
     <img
       src={expertiseData[index].rightImg}
       alt="right"
@@ -274,47 +292,14 @@ export default function Home() {
             </div>
            
 
-<div className="mt-10 flex justify-center lg:justify-start gap-4 pb-10">
 
-  {/* LEFT */}
-  <button
-    onClick={() =>
-      setIndex((prev) => (prev === 0 ? lastIndex : prev - 1))
-    }
-    className={`w-11 h-11 rounded-full shadow flex items-center justify-center transition-all duration-200
-      ${
-        index === 0
-          ? "bg-[#EEF1FF] text-[#0B0F5C]"   // inactive
-          : "bg-white text-[#0B0F5C]"       // active (WHITE)
-      }
-    `}
-  >
-    ←
-  </button>
 
-  {/* RIGHT */}
-  <button
-    onClick={() =>
-      setIndex((prev) => (prev === lastIndex ? 0 : prev + 1))
-    }
-    className={`w-11 h-11 rounded-full shadow flex items-center justify-center transition-all duration-200
-      ${
-        index === lastIndex
-          ? "bg-[#EEF1FF] text-[#0B0F5C]"   // inactive
-          : "bg-white text-[#0B0F5C]"       // active (WHITE)
-      }
-    `}
-  >
-    →
-  </button>
-
-</div>
-
+  
           </div>
         </section>
         {/* ================= WHY PARTNER ================= */}
-        <section className=" text-center">
-          <h2 className="font-bold text-[26px] sm:text-[32px] md:text-[40px] leading-[110%] text-[#050363]">
+        <section className="mt-16 text-center">
+          <h2 className="font-semibold text-[40px] leading-[100%] text-[#050363]">
             Why Partner with Us
           </h2>
 
@@ -365,7 +350,7 @@ export default function Home() {
               className="
                 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2
                 bg-[#DEE6FA]
-                w-[90%] max-w-[1000px]
+                w-[1200px] h-[284px]
                 rounded px-6 py-8 md:px-10 md:py-10
                 flex flex-col md:flex-row items-center
                 gap-6 md:gap-12
@@ -390,7 +375,7 @@ export default function Home() {
 
               {/* 3. Description & Navigation */}
               <div className="flex-1 flex flex-col gap-4 text-center md:text-left">
-                <p className="font-bevietnam text-[18px] md:text-[24px] font-semibold leading-[100%] text-[#4A4A4A]">
+                <p className="font-bevietnam text-[24px] font-normal leading-[100%] text-[#4A4A4A]">
                   {partnerData[partnerIndex].desc}
                 </p>
 
@@ -431,41 +416,25 @@ export default function Home() {
         </section>
 
         {/* ================= FINAL CTA ================= */}
-        <section className="py-20 text-center">
-          <h2 className="font-bold text-[40px] leading-[110%] text-[#050363]">
+        <section className="py-20 text-center flex flex-col items-center">
+          <h2 className="font-semibold text-[40px] leading-[100%] text-[#000000] max-w-[832px]">
             Let’s Build Your Digital Future Together
           </h2>
 
-          <p className="mt-8 font-bevietnam
+          <p className="mt-12 font-bevietnam
   font-normal
   text-[24px]
   leading-[100%]
   tracking-[0]
   text-center
-  text-[#4A4A4A]">
+  text-[#4A4A4A]
+  max-w-[1102px]">
             Whether you’re an early-stage startup testing your first idea or an
-            SME looking to digitize 
-          </p>
-          <p className="mt-1 font-bevietnam
-  font-normal
-  text-[24px]
-  leading-[100%]
-  tracking-[0]
-  text-center
-  text-[#4A4A4A]">
-            operations, Datenstrom-3AG provides the technology, strategy, and guidance to make it 
-          </p>
-          <p className="mt-1 font-bevietnam
-  font-normal
-  text-[24px]
-  leading-[100%]
-  tracking-[0]
-  text-center
-  text-[#4A4A4A]">
-          happen.
+            SME looking to digitize operations, Datenstrom-3AG provides the technology, strategy, and guidance to make it happen.
           </p>
 
-          <div className="mt-8 flex justify-center">
+
+          <div className="mt-14 flex justify-center">
              <button className="
   relative
   flex items-center

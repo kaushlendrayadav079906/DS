@@ -9,11 +9,12 @@ export default function Navbar({ transparent = false }) {
     <>
       {/* ===== FIXED NAVBAR ===== */}
       <header className={`fixed top-0 left-0 w-full z-50 transition-all duration-300`}>
-        <nav className={`mx-auto max-w-[1728px] h-[134px] flex items-center justify-between px-10 transition-all duration-300 
-          ${transparent 
-            ? 'bg-transparent border-none shadow-none' 
-            : 'bg-[linear-gradient(to_bottom,#ffffff_50%,transparent_50%)] border-b border-[#9CA1CD]'
-          }`}>
+       <nav className={`mx-auto max-w-[1728px] h-[134px] flex items-center justify-between px-10 transition-all duration-300
+  ${transparent
+    ? 'bg-white/20 backdrop-blur-sm'
+    : 'bg-white'
+  }`}>
+
 
           {/* Logo */}
           <div className="flex items-center gap-3">
@@ -28,11 +29,12 @@ export default function Navbar({ transparent = false }) {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex flex-1 justify-center">
-            <div className="rounded-full px-8 py-3 bg-[#0B0F5C] text-white shadow-lg flex items-center gap-8 text-sm font-medium">
-              <Link to="/About" className="hover:text-gray-200 transition">About</Link>
-              <a href="/MVP" className="hover:text-gray-200 transition">MVP Development</a>
-              <Link to="/application" className="hover:text-gray-200 transition">Application Development</Link>
-              <Link to="/contact" className="hover:text-gray-200 transition">Contact Us</Link>
+             {/* Dark Capsule Container for Links */}
+            <div className="rounded-full px-10 py-4 bg-[#020224] flex items-center gap-12 text-sm font-medium shadow-lg">
+              <Link to="/About" className="text-white hover:text-gray-300 transition">About</Link>
+              <a href="/MVP" className="text-white hover:text-gray-300 transition">MVP Development</a>
+              <Link to="/application" className="text-white hover:text-gray-300 transition">Application Development</Link>
+              <Link to="/contact" className="text-white hover:text-gray-300 transition">Contact Us</Link>
             </div>
           </div>
 
@@ -61,7 +63,7 @@ export default function Navbar({ transparent = false }) {
         <button className="close-btn" onClick={() => setOpen(false)}>✕</button>
 
         <Link className="menu-item" to="/About" onClick={() => setOpen(false)}>About</Link>
-        <Link className="menu-item" to="/page" onClick={() => setOpen(false)}>page</Link>
+        {/* <Link className="menu-item" to="/page" onClick={() => setOpen(false)}>page</Link> */}
         <a className="menu-item" href="/MVP" onClick={() => setOpen(false)}>MVP Development</a>
         <Link className="menu-item" to="/application" onClick={() => setOpen(false)}>
           Application Development

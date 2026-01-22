@@ -7,14 +7,14 @@ import MVP from './pages/MVP.jsx'
 // import ProjectDetail from './pages/ProjectDetail.jsx'
 import Projects from './pages/Projects.jsx'
 import Splash from './pages/Splash.jsx'
-import Page from './pages/page.jsx'
+// import Page from './pages/page.jsx'
 
 
 export default function App() {
   return (
     <Routes>
       <Route path="/" element={<Splash />} />
-      <Route path="/page" element={<Page />} />
+      {/* <Route path="/page" element={<Page />} /> */}
 
       <Route path="/home" element={<Home />} />
       <Route path="/application" element={<Application />} />
