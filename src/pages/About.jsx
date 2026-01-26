@@ -90,7 +90,7 @@ export default function About() {
 
       <main className="flex-1 w-full overflow-hidden">
        {/* ---------------- OUR PURPOSE ---------------- */}
-<section className="relative mt-[-25px] w-full min-h-screen flex items-start pt-[200px] bg-[#EEF1FB] overflow-hidden">
+<section className="relative  w-full min-h-screen flex items-start pt-[140px] bg-[#EEF1FB] overflow-hidden">
   {/* Background Gradient Image */}
   <img
     src={Gradient}
@@ -125,12 +125,12 @@ export default function About() {
         <div className="absolute bottom-0 right-0 w-full lg:w-[800px] z-20">
           <div className="bg-[#EEF1FB] pt-8 pl-10 pr-6 pb-6 rounded-none lg:rounded-tl-[60px]">
             <p
-  className="font-bevietnam font-[400] text-[24px] leading-[24px] tracking-[0]
-             text-[#050363] max-w-[788px]
-             overflow-hidden text-ellipsis
-             [display:-webkit-box]
-             [-webkit-line-clamp:2]
-             [-webkit-box-orient:vertical]"
+  className="question xl:text-lg py-1.1
+  font-bevietnam font-[400]
+  text-[50px] 
+  leading-[1.1]
+  max-w-[1200px]
+        text-[#050363]"
 >
   We speed the journey from idea to execution, delivering fast MVPs and custom apps without the usual tech headaches.
 </p>
@@ -148,7 +148,7 @@ export default function About() {
     {/* Bottom Text Section */}
     <div className="mt-6 ml-[4%]">
 
-      <h2 className="font-semibold text-[48px] leading-[100%] text-[#050363] max-w-[780px]">
+      <h2 className="font-semibold text-[48px]  leading-[1.3] text-[#050363] max-w-[780px]">
         <span className="whitespace-nowrap">
           Turning Ideas into Digital Reality for Startups
         </span>
@@ -156,7 +156,12 @@ export default function About() {
         and SMEs
       </h2>
 
-      <p className="mt-6 font-bevietnam font-[400] text-[24px] leading-[24px] tracking-[0] text-[#050363] max-w-[922px]">
+      <p className="mt-6 font-bevietnam font-[400]  question xl:text-lg py-1.1
+  
+  text-[24px] 
+  leading-[1.1]
+  
+       text-[#050363] max-w-[922px]">
   Turn your ideas into market-ready solution. We help startups launch quickly and SMEs digitize efficiently with tailored digital solutions.
 </p>
 
@@ -203,19 +208,17 @@ export default function About() {
 
     <div className="relative mt-20 w-full max-w-[900px] mx-auto h-auto lg:h-[450px] flex flex-col lg:block items-center">
 
-      {/* Arc Border - Desktop Only */}
-      <div className="hidden lg:block absolute inset-0 rounded-t-full border-[1.5px] border-[#0B0F5C] opacity-20" />
-<div className="hidden lg:block absolute inset-0 rounded-t-full border-t-[1.5px] border-x-[1.5px] border-b-0 border-[#0B0F5C]" />
+      <div className="hidden lg:block absolute inset-x-16 top-16 bottom-0 rounded-t-full border-[0.35px] border-[#0B0F5C]/35" />
 
       {/* Center Image - Dome Shape */}
       <div className="relative lg:absolute lg:left-1/2 lg:-translate-x-1/2 lg:bottom-0 
-                      w-[400px] h-[230px] lg:w-[720px] lg:h-[400px] 
+                      w-[350px] h-[180px] lg:w-[670px] lg:h-[320px] 
                       rounded-t-[170px] lg:rounded-t-[350px] 
                       overflow-hidden shadow-2xl z-10 bg-white mb-8 lg:mb-0">
         <img
           src={differentData[activeDiff].image}
           alt=""
-          className="w-full h-full object-cover transition-all duration-500 ease-in-out"
+          className="w-full h-full object-cover transition-all duration-500 "
         />
       </div>
 
@@ -224,12 +227,13 @@ export default function About() {
         {differentData.map((item, index) => {
           const Icon = item.icon;
           // Positions adjusted for w-16 (64px) centered on R=450 arc
-          const positions = [
-            "lg:left-[-5px] lg:top-[264px]",
-            "lg:left-[228px] lg:top-[10px]",
-            "lg:right-[228px] lg:top-[10px]",
-            "lg:right-[-5px] lg:top-[264px]",
-          ];
+         const positions = [
+  "lg:left-[50px] lg:top-[300px]",   // left bottom
+  "lg:left-[200px] lg:top-[100px]",    // left top
+  "lg:right-[200px] lg:top-[100px]",   // right top
+  "lg:right-[50px] lg:top-[300px]",  // right bottom
+];
+
 
           return (
             <button

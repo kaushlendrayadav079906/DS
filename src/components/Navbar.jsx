@@ -1,20 +1,27 @@
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import logo from '../assets/icons/logo1.png'
 
 export default function Navbar({ transparent = false }) {
   const [open, setOpen] = useState(false)
+  const location = useLocation()
+  const isContactPage = location.pathname.toLowerCase() === '/contact'
+  // Define checks for other pages where similar navbar styling is desired
+  const isProjectDetailsPage = location.pathname.toLowerCase().includes('/projectdetail') || location.pathname.toLowerCase().includes('/project-detail');
+  const isPagePage = location.pathname.toLowerCase() === '/page';
+  const isMVPPage = location.pathname.toLowerCase() === '/mvp';
 
   return (
     <>
       {/* ===== FIXED NAVBAR ===== */}
-      <header className={`fixed top-0 left-0 w-full z-50 transition-all duration-300`}>
-       <nav className={`mx-auto max-w-[1728px] h-[134px] flex items-center justify-between px-10 transition-all duration-300
-  ${transparent
-    ? 'bg-white/20 backdrop-blur-sm'
-    : 'bg-white'
-  }`}>
-
+      <header className={`absolute top-0 left-0 w-full z-50 transition-all duration-300`}>
+      <nav className={`mx-auto max-w-[1528px] h-[72px] flex items-center justify-between px-10 transition-all duration-300
+        ${transparent ? 'bg-white/20 backdrop-blur-sm' : 'bg-white'}
+       ${isContactPage || isProjectDetailsPage || isPagePage || isMVPPage
+          ? 'bg-white  shadow-[0_5px_20px_rgba(0,0,0,0.15)]'
+          : ''
+        }
+        `}>
 
           {/* Logo */}
           <div className="flex items-center gap-3">
@@ -30,11 +37,24 @@ export default function Navbar({ transparent = false }) {
           {/* Desktop Menu */}
           <div className="hidden md:flex flex-1 justify-center">
              {/* Dark Capsule Container for Links */}
-            <div className="rounded-full px-10 py-4 bg-[#020224] flex items-center gap-12 text-sm font-medium shadow-lg">
-              <Link to="/About" className="text-white hover:text-gray-300 transition">About</Link>
-              <a href="/MVP" className="text-white hover:text-gray-300 transition">MVP Development</a>
-              <Link to="/application" className="text-white hover:text-gray-300 transition">Application Development</Link>
-              <Link to="/contact" className="text-white hover:text-gray-300 transition">Contact Us</Link>
+            <div className="rounded-2xl px-4 py-2 bg-[#020224] flex items-center gap-8 text-[13px] font-medium shadow-lg border border-[#0B0F5C] hover:border-[#050363] transition-all duration-300">
+
+              <Link to="/About" className="relative group text-white transition-colors duration-300">
+                About
+                <span className={`absolute -bottom-1 left-0 h-[2px] bg-white transition-all duration-300 ${location.pathname.toLowerCase() === '/about' ? 'w-full' : 'w-0 group-hover:w-full'}`}></span>
+              </Link>
+              <a href="/MVP" className="relative group text-white transition-colors duration-300">
+                MVP Development
+                <span className={`absolute -bottom-1 left-0 h-[2px] bg-white transition-all duration-300 ${location.pathname === '/MVP' ? 'w-full' : 'w-0 group-hover:w-full'}`}></span>
+              </a>
+              <Link to="/application" className="relative group text-white transition-colors duration-300">
+                Application Development
+                <span className={`absolute -bottom-1 left-0 h-[2px] bg-white transition-all duration-300 ${location.pathname.toLowerCase() === '/application' ? 'w-full' : 'w-0 group-hover:w-full'}`}></span>
+              </Link>
+              <Link to="/contact" className="relative group text-white transition-colors duration-300">
+                Contact Us
+                <span className={`absolute -bottom-1 left-0 h-[2px] bg-white transition-all duration-300 ${isContactPage ? 'w-full' : 'w-0 group-hover:w-full'}`}></span>
+              </Link>
             </div>
           </div>
 
@@ -42,7 +62,7 @@ export default function Navbar({ transparent = false }) {
           <div className="hidden md:block">
             <Link
               to="/Splash"
-              className="inline-block rounded-full bg-white text-[#0B0F5C] text-sm font-bold px-6 py-2 border border-[#0B0F5C] hover:bg-gray-50 transition shadow-sm"
+              className="inline-block rounded-full bg-white text-[#0B0F5C] text-sm font-bold px-4 py-1 border border-[#0B0F5C] hover:bg-gray-50 transition shadow-sm"
             >
               Start Your Project
             </Link>

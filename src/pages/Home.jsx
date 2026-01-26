@@ -23,7 +23,7 @@ const partnerData = [
   },
   {
     title: "German-Market Expertise",
-    desc: "Benefit from our deep understanding of Germany's business landscape and regulations.",
+        desc: "Benefit from our deep understanding of Germany's business landscape and regulations.",
     img: partnerImg3,
   },
 ];
@@ -48,7 +48,7 @@ export default function Home() {
   const [partnerIndex, setPartnerIndex] = useState(0);
 
   return (
-    <div className="min-h-screen bg-white overflow-x-hidden font-sans">
+<div className="min-h-screen bg-white overflow-x-hidden font-sans">
       <Navbar transparent />
       {/* ================= HERO SECTION ================= */}
             <section className="relative w-full min-h-[738px] flex flex-col items-center justify-center overflow-hidden bg-gradient-to-br from-[#AFA3E8] via-[#DAD7F3] to-[#E5E9F9]">
@@ -63,11 +63,15 @@ export default function Home() {
       </div>
       
       
-              <div className="relative z-10 w-full max-w-[1400px] mx-auto flex flex-col items-center text-center px-4 pt-[140px] md:pt-[160px]">
-                
-                {/* Main Headline */}
+             <div className="relative z-10 w-full max-w-[1400px] mx-auto flex flex-col items-center text-center px-4 xl:text-lg py-2.5 leading-[100%]">
+           {/* Main Headline */}
                 <h1
-                className="font-bold text-[48px] leading-[100%] text-[#050363]"
+                className="font-bold question
+  text-[48px] sm:text-[50px] xl:text-[50px]
+  py-2.5
+  leading-[1.3]
+  max-w-[1242px]
+  text-[#4A4A4A]"
                 style={{ color: "#0B0F5C" }}
               >
                 Fast MVPs & Scalable Applications for <br />
@@ -76,32 +80,18 @@ export default function Home() {
       
                 {/* Subheadline */}
                <p className="
-        mt-8
-        font-bevietnam
-        font-normal
-        text-[24px]
-        leading-[100%]
-        tracking-[0]
-        text-center
+        
+        question xl:text-lg py-2.5
+  
+  text-[100px] sm:text-[50px] 
+  leading-[100%]
+  max-w-[542px]
         text-[#050363]
       ">
          Turn your ideas into market-ready solution. We help startups launch
-                  
+        quickly and SMEs digitize efficiently with tailored digital solutions.    
                 </p>
-                <p className="
-        mt-2
-        font-bevietnam
-        font-normal
-        text-[24px]
-        leading-[100%]
-        tracking-[0]
-        text-center
-        text-[#050363]
-      ">
-         
-                  quickly and SMEs digitize efficiently with tailored digital solutions.
-                </p>
-      
+                
       
                  
       
@@ -119,7 +109,7 @@ export default function Home() {
                 </div>
       
                 {/* CTA Button */}
-                <div className="mt-8 flex justify-center">
+                <div className="mt-12 flex justify-center">
              <button className="
   relative
   flex items-center
@@ -154,11 +144,11 @@ export default function Home() {
             </section>
       <main className="max-w-[1400px] mx-auto px-6">
         {/* ===== Complex Section ===== */}
-        <section className="py-20 bg-white">
+        <section className=" bg-white">
           <div className="max-w-[1400px] mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-16 px-6">
             {/* Text */}
             <div className="text-center md:text-left">
-             <h2 className="font-semibold text-[48px] leading-[100%] text-[#050363] max-w-[780px]">
+             <h2 className="font-semibold text-[48px] py-1.5 leading-[1.3] text-[#050363] max-w-[780px]">
   <span className="whitespace-nowrap">
     Bringing Ideas to Life Can Be
   </span>
@@ -167,13 +157,13 @@ export default function Home() {
 </h2>
 
 
-             <p className="mt-12 font-bevietnam 
-  font-normal
+             <p className="mt-8 question xl:text-lg py-2.5
+  
   text-[24px]
   leading-[100%]
-  tracking-[0]
+  max-w-[742px]
   text-[#4A4A4A]
-  max-w-[779px]">
+ ">
   Startups often face tight timelines and limited budgets when
   building their first MVP, while SMEs struggle to digitize
   operations and create custom applications. Delays, unclear
@@ -184,23 +174,29 @@ export default function Home() {
             </div>
 
             {/* Image */}
-            <div className=" flex justify-center md:justify-end">
+            <div className=" mt-12 flex justify-center md:justify-end">
               <img
                 src={complexImg}
                 alt="Dashboard"
-                className=" mt-12 w-[514px] h-[323px] object-cover rounded-[20px] shadow-md"
+                className=" mt-12 w-[414px] h-[323px] object-cover rounded-[20px] shadow-md"
               />
             </div>
           </div>
         </section>
 
         {/* ================= OUR EXPERTISE ================= */}
-        <section className=" bg-white">
+        <section className="mt-8 py-24 bg-white">
+
           <div className="max-w-[1552px] ml-auto mr-0 text-center px-6">
             <h2 className="font-semibold text-[40px] leading-[100%] text-[#050363]">
               Our Expertise
             </h2>
-            <p className="mt-12 font-bevietnam font-normal text-[24px] leading-[100%] tracking-[0] text-center text-[#4A4A4A]">
+            <p className="mt-8 question xl:text-lg py-2.5
+  
+  text-[24px]
+  leading-[100%]
+  
+  text-[#4A4A4A]">
   Datenstrom-3AG simplifies the journey from concept to launch. Our expert team delivers <br />
   fast, cost-effective, and scalable solutions that meet your business goals.
 </p>
@@ -233,7 +229,7 @@ export default function Home() {
 </div>
 
             <div className="mt-10 grid grid-cols-1 lg:grid-cols-3 items-stretch gap-8 lg:gap-16">
-             <div className="flex justify-center lg:justify-end">
+             <div className=" mt-8 flex justify-center lg:justify-end">
   <div className="border-[3px] border-[#8E95D9] w-[425px] h-[425px] overflow-hidden rounded-[20px]">
     <img
       src={expertiseData[index].leftImg}
@@ -243,14 +239,20 @@ export default function Home() {
   </div>
 </div>
 
-              <div className="text-center lg:text-left flex flex-col items-center lg:items-start text-left">
+              <div className=" mt-8 text-center lg:text-left flex flex-col items-center lg:items-start text-left">
                 <h3 className="font-semibold text-[40px] leading-[100%] text-[#000000] max-w-[454px]">
                   {expertiseData[index].title}
                 </h3>
-                <p className="mt-12 font-bevietnam font-normal text-[24px] leading-[100%] tracking-[0] text-[#000000] max-w-xl mx-auto lg:mx-0">
+                <p className="mt-12 question xl:text-lg py-2.5
+  text-[35px]
+  leading-[100%]
+  max-w-[742px]
+  font-semibold
+  text-[#000000]
+  mx-auto lg:mx-0">
                   {expertiseData[index].desc}
                 </p>
-                <button className=" mt-10 lg:mt-[130px]
+                <button className="  lg:mt-[110px]
   relative
   flex items-center
   pl-5 pr-12 py-2
@@ -279,7 +281,7 @@ export default function Home() {
   </span>
 </button>
               </div>
-             <div className="flex justify-center lg:justify-start">
+             <div className="mt-8 flex justify-center lg:justify-start">
   <div className="border-[3px] border-[#8E95D9] w-[425px] h-[425px] overflow-hidden rounded-[20px]">
     <img
       src={expertiseData[index].rightImg}
@@ -303,27 +305,19 @@ export default function Home() {
             Why Partner with Us
           </h2>
 
-          <p className="mt-8 font-bevietnam
-  font-normal
-  text-[24px]
-  leading-[100%]
-  tracking-[0]
-  text-center
-  text-[#4A4A4A]">
-            Provide a general summary of the services you provide, highlighting
-            key features and benefits for
-          </p>
-           <p className="mt-2 font-bevietnam
-  font-normal
-  text-[24px]
-  leading-[100%]
-  tracking-[0]
-  text-center
-  text-[#4A4A4A]">
-            potential clients.
-          </p>
+          <p
+  className="mt-5 mx-auto text-center xl:text-lg py-2.5
+  text-[24px] leading-[100%]
+  text-[#4A4A4A]
+  max-w-[742px]"
+>
+  Provide a general summary of the services you provide, highlighting
+  key features and benefits for potential clients.
+</p>
 
-          <div className="mt-10 relative w-full h-[400px] md:h-[500px] rounded-xl overflow-hidden shadow-lg">
+           
+
+          <div className="mt-11 relative w-full h-[400px] md:h-[500px] rounded-xl overflow-hidden shadow-lg">
             <img
               src={partnerData[partnerIndex].img}
               className="w-full h-full object-cover transition-all duration-500 ease-in-out"
@@ -375,9 +369,17 @@ export default function Home() {
 
               {/* 3. Description & Navigation */}
               <div className="flex-1 flex flex-col gap-4 text-center md:text-left">
-                <p className="font-bevietnam text-[24px] font-normal leading-[100%] text-[#4A4A4A]">
-                  {partnerData[partnerIndex].desc}
-                </p>
+                <p className="
+  font-bevietnam
+  text-[24px]
+  py-2.5
+  leading-[100%]
+  text-[#4A4A4A]
+  max-w-[942px]
+">
+  {partnerData[partnerIndex].desc}
+</p>
+
 
                 <div className="flex justify-center md:justify-start gap-3 mt-2">
                   <button
@@ -421,14 +423,13 @@ export default function Home() {
             Let’s Build Your Digital Future Together
           </h2>
 
-          <p className="mt-12 font-bevietnam
-  font-normal
+          <p className="mt-12 question xl:text-lg py-2.5
+  
   text-[24px]
   leading-[100%]
-  tracking-[0]
-  text-center
+  
   text-[#4A4A4A]
-  max-w-[1102px]">
+  max-w-[742px]">
             Whether you’re an early-stage startup testing your first idea or an
             SME looking to digitize operations, Datenstrom-3AG provides the technology, strategy, and guidance to make it happen.
           </p>

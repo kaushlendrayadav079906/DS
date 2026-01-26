@@ -1,4 +1,5 @@
 import { FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import logo from "../assets/icons/logo1.png";
 
 export default function Footer() {
@@ -111,9 +112,9 @@ export default function Footer() {
               © 2025 datenstrom-3ag.com . All Rights Reserved
             </div>
 
-            <a href="#" className="hover:underline text-black">Privacy Policy</a>
+            <Link to="/page" className="hover:underline text-black">Privacy Policy</Link>
 
-            <a href="#" className="hover:underline text-black">Terms and conditions</a>
+            <Link to="/project-detail" className="hover:underline text-black">Terms and conditions</Link>
 
           </div>
 
